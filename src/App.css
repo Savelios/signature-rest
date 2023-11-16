@@ -1,0 +1,26 @@
+.main-background {
+	background-image: url("/src/assets/main-background.png");
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.gold-background {
+	background-image: url("/src/assets/gold-background.png");
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.primary-background {
+	background-image: url("/src/assets/primary-background.png");
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+    z-index: -1;
+}   

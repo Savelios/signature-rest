@@ -1,0 +1,24 @@
+.header__nav-container {
+    width: 100%;
+    display: flex;
+    gap: 51px;
+}
+
+.header__nav-item {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Futura New;
+    font-size: 24.904px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: 4.981px;
+    text-transform: uppercase;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
