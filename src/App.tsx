@@ -15,6 +15,7 @@ import "./assets/fonts/FuturaNewLight-Reg.ttf";
 import './Reset.css'
 import './App.css';
 import "./assets/fonts/fonts.css";
+import ReserveForm from './components/forms/reserve/reserve-form';
 
 
 
@@ -89,7 +90,8 @@ function App() {
         <Route path="/wine" element={<WinePage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
-      <Footer />
+      <Footer onOpenModal={handleOpenModal} route={""} />
+      {isModalOpen && <ReserveForm onCloseModal={handleCloseModal} />}
     </div>
   );
 }
