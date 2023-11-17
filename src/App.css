@@ -1,3 +1,8 @@
+html,
+body {
+	font-family: "Futura New";
+}
+
 .main-background {
 	background-image: url("/src/assets/main-background.png");
 	position: absolute;

@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Main from './pages/Main/MainPage';
 import MainPage from './pages/Main/MainPage';
 import AboutPage from './pages/About/AboutPage';
 import PicturePage from './pages/Picture/PicturePage';
@@ -10,8 +7,16 @@ import MenuPage from './pages/Menu/MenuPage';
 import WinePage from './pages/Wine/WinePage';
 import ContactsPage from './pages/Contacts/ContactsPage';
 import { Footer } from './ui/footer/Footer';
-import './Reset.css'
 import { Header } from './ui/header/header';
+
+import "./assets/fonts/FuturaNewLight-Reg.woff";
+import "./assets/fonts/FuturaNewLight-Reg.ttf";
+
+import './Reset.css'
+import './App.css';
+import "./assets/fonts/fonts.css";
+
+
 
 function App() {
   const windowSize = useRef<number[]>([window.innerWidth, window.innerHeight]);
@@ -65,7 +70,7 @@ function App() {
     if (location.pathname === "/pictures" && windowSize.current[0] > 0) {
       footer[0].setAttribute("style", "display:none;");
     } else {
-      footer[0].setAttribute("style", "display:none;");
+      footer[0].setAttribute("style", "display:flex;");
     }
   }, [location]);
 

@@ -1,0 +1,78 @@
+.contacts__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.map-width {
+    width: 651px;
+}
+
+.map-height {
+    height: 400px;
+}
+
+
+.contacts__map-container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002024;
+    height: 793px;
+    color: white;
+    border-radius: 15px;
+    margin: 103px 0 137px 0;
+}
+
+.contacts__address-text {
+    color: var(--gray, #D5D7D2);
+    text-align: center;
+    font-family: Futura New;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contacts__admin-text {
+    color: #91793A;
+    text-align: center;
+    font-family: Futura New;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.contacts__phone-text {
+    color: var(--primary-white, #FFF);
+    text-align: center;
+    font-family: Futura New;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.contacts__social-media-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contacts__copy-right-text {
+    color: var(--purple-200-background, #F3F1F9);
+    text-align: center;
+    font-family: P22 Underground CY Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+    width: 532px;
+    height: 25px;
+}
