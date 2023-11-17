@@ -2,7 +2,6 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 60px;
 }
@@ -11,6 +10,8 @@
     width: 647.585px;
     height: 500px;
     flex-shrink: 0;
+
+    padding: 150px 0 730px 0;
 }
 
 .picture-view__img {
@@ -52,6 +53,7 @@
     align-items: center;
     flex-shrink: 0;
     padding: 52px 140px 0 140px;
+    margin-top: 110px;
     border-radius: 15px 15px 0px 0px;
     background: var(--green-dark, #002024);
 }
@@ -121,5 +123,5 @@
 }
 
 #about-person-text {
-padding-top: 10px;
+    padding-top: 10px;
 }

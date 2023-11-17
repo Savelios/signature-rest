@@ -44,7 +44,7 @@ function App() {
       className = 'gold-background';
       break;
     case '/pictures':
-      className = 'primary-background';
+      className = 'picture-page-background';
       break;
     case '/wine-gallery':
       className = 'primary-background';

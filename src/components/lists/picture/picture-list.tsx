@@ -4,6 +4,8 @@ import PictureData from "../../../dto/data/picture-data";
 import { PictureService } from "../../../services/PictureService";
 import { PictureView } from "../../views/picture/PictureView";
 
+import './picture-list.css'
+
 export function PictureList() {
   const pictureService = new PictureService();
   const [activePictureIndex, setActivePictureIndex] = useState(0);

@@ -24,3 +24,12 @@
 	background-repeat: no-repeat;
     z-index: -1;
 }   
+
+.picture-page-background {
+	background-image: url("/src/assets/picture-page-background.png");
+	position: absolute;
+	height: 114%;
+	width: 100%;
+	background-repeat: no-repeat;
+    z-index: -1;
+}

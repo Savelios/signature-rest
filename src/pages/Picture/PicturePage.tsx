@@ -7,9 +7,9 @@ type PicturePageProps = {
 
 const PicturePage: React.FC<PicturePageProps> = ({ onOpenModal }) => {
   return (
-    <>
+    <div className="picture-page__main-container">
       <PictureList />
-    </>
+    </div>
   );
 };
 export default PicturePage;
