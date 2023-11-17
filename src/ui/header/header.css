@@ -1,4 +1,8 @@
 .header__nav-container {
+	cursor: pointer;
+	letter-spacing: 4.981px;
+	font-family: "Futura New";
+	font-weight: 700;
     width: 100%;
     display: flex;
     gap: 51px;
@@ -14,6 +18,32 @@
     line-height: 125%;
     letter-spacing: 4.981px;
     text-transform: uppercase;
+}
+
+.active-header__nav-item {
+	position: relative;
+	bottom: 16px;
+
+	text-decoration: underline;
+	letter-spacing: 4.981px;
+
+	font-size: 15px;
+	font-weight: 100;
+
+	text-underline-offset: 18px;
+}
+
+.active-header__nav-item::before {
+	position: absolute;
+	bottom: 0;
+	left: 32%;
+
+	width: 50%;
+	height: 1px;
+
+	content: "";
+	
+	border-bottom: 1px;
 }
 
 

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Route, Routes, useLocation } from 'react-router-dom';
@@ -59,6 +59,15 @@ function App() {
       className = 'default-class';
       break;
   }
+
+  useEffect(() => {
+    const footer = document.getElementsByClassName("footer");
+    if (location.pathname === "/pictures" && windowSize.current[0] > 0) {
+      footer[0].setAttribute("style", "display:none;");
+    } else {
+      footer[0].setAttribute("style", "display:flex;");
+    }
+  }, [location]);
 
   return (
     <div className="App">
