@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import "./Header.css";
+import "./header.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../logo/logo";
 import Burger from "../burger/burger";
@@ -34,9 +34,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenModalMenu }) => {
             type: "ЭКСПОЗИЦИЯ",
             id: 2,
             className:
-                location.pathname === "/exposition" ? "active-header__nav-item" : "",
+                location.pathname === "/pictures" ? "active-header__nav-item" : "",
             onClick: () => {
-                navigate("/exposition");
+                navigate("/pictures");
             },
         },
         {

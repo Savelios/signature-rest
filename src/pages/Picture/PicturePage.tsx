@@ -1,9 +1,15 @@
-import React from 'react'
+import { PictureList } from "../../components/lists/picture/picture-list";
+import "./PicturePage.css";
 
-const PicturePage = () => {
+type PicturePageProps = {
+  onOpenModal: () => void;
+};
+
+const PicturePage: React.FC<PicturePageProps> = ({ onOpenModal }) => {
   return (
-    <div>PicturePage</div>
-  )
-}
-
-export default PicturePage
+    <>
+      <PictureList />
+    </>
+  );
+};
+export default PicturePage;

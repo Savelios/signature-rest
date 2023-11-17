@@ -11,7 +11,7 @@ import WinePage from './pages/Wine/WinePage';
 import ContactsPage from './pages/Contacts/ContactsPage';
 import { Footer } from './ui/footer/Footer';
 import './Reset.css'
-import { Header } from './ui/header/Header';
+import { Header } from './ui/header/header';
 
 function App() {
   const windowSize = useRef<number[]>([window.innerWidth, window.innerHeight]);
@@ -43,7 +43,7 @@ function App() {
     case '/about':
       className = 'gold-background';
       break;
-    case '/exposition':
+    case '/pictures':
       className = 'primary-background';
       break;
     case '/wine-gallery':
@@ -70,7 +70,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/picture" element={<PicturePage />} />
+        <Route path="/pictures" element={<PicturePage onOpenModal={handleOpenModal} />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/wine" element={<WinePage />} />
         <Route path="/contacts" element={<ContactsPage />} />

@@ -1,0 +1,49 @@
+
+{
+  "request": {
+    "method": "GET",
+    "url": "/category/1"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "id": 1,
+        "name": "Интересный RAW БАР",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/pvngkMV/pngwing-com-7-removebg-preview.png"
+      },
+      {
+        "id": 2,
+        "name": "Интересный RAW БАР",
+        "price": 13450,
+        "description": "description",
+        "image": "https://i.ibb.co/pvngkMV/pngwing-com-7-removebg-preview.png"
+      },
+      {
+        "id": 3,
+        "name": "Интересный RAW БАР",
+        "price": 1330,
+        "description": "description",
+        "image": "https://i.ibb.co/pvngkMV/pngwing-com-7-removebg-preview.png"
+      },
+      {
+        "id": 4,
+        "name": "Интересный RAW БАР",
+        "price": 1221,
+        "description": "description",
+        "image": "https://i.ibb.co/pvngkMV/pngwing-com-7-removebg-preview.png"
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding",
+      "X-Content-Type-Options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-xss-protection": "1; mode=block"
+    }
+  }
+}

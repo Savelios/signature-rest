@@ -1,0 +1,105 @@
+
+{
+  "request": {
+    "method": "GET",
+    "url": "/menu_items"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "id": 1,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 2,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 3,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 4,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 5,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 6,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 7,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 8,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 9,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 10,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 11,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      },
+      {
+        "id": 12,
+        "name": "Очень вкусное блюдо",
+        "price": 1250,
+        "description": "description",
+        "image": "https://i.ibb.co/BzZcNLd/chutney-bhaji-pakora-maharashtrian-ru2.png"
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding",
+      "X-Content-Type-Options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-xss-protection": "1; mode=block"
+    }
+  }
+}

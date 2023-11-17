@@ -1,0 +1,125 @@
+.picture-view__main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.picture-view__card-container {
+    width: 647.585px;
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.picture-view__img {
+    width: 647.585px;
+    height: 500px;
+    flex-shrink: 0;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.picture-view__img.clicked {
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 50px 5px #91793a;
+    transition: width 0.5s ease, height 0.5s ease, box-shadow 0.5s ease;
+}
+
+.picture-view__card-container.clicked img.picture-view__img {
+    width: 580px;
+    height: 695.479px;
+}
+
+.picture-view__card-container.clicked .picture-view__container-info {
+    display: block;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+.picture-view__container-info {
+    display: none;
+}
+
+.picture-view__card-container.clicked {
+    display: flex;
+    width: 860px;
+    height: 1380px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 52px 140px 0 140px;
+    border-radius: 15px 15px 0px 0px;
+    background: var(--green-dark, #002024);
+}
+
+.picture-view__container-info>h1 {
+    flex-shrink: 0;
+    color: var(--Gold, #91793A);
+    font-family: Futura New;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+
+    padding: 61px 201px 54px 66px;
+}
+
+.picture-view__person-container {
+    padding: 42px 0 30px 60px;
+    display: flex;
+}
+
+.picture-view__person-name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture-view__person-avatar {
+    padding-right: 30px;
+}
+
+.picture-view__person-name {
+    color: var(--White, #FFF);
+    font-family: Futura New;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.6px;
+}
+
+.picture-view__person-social-link {
+    color: var(--Gray, #A0AEAF);
+    font-family: Futura New;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.1px;
+    text-decoration-line: underline;
+}
+
+.picture-view__about-person-text {
+    overflow: hidden;
+    color: var(--Gray, #A0AEAF);
+    text-overflow: ellipsis;
+    font-family: Futura New;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.1px;
+
+    padding: 30px 64px 0 66px;
+    flex-shrink: 0;
+}
+
+#about-person-text {
+padding-top: 10px;
+}

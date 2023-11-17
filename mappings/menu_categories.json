@@ -1,0 +1,48 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/menu_categories"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": [
+            {
+                "id": 1,
+                "name": "RAW БАР"
+            },
+            {
+                "id": 2,
+                "name": "САЛАТЫ"
+            },
+            {
+                "id": 3,
+                "name": "ОВОЩИ"
+            },
+            {
+                "id": 4,
+                "name": "СУПЫ"
+            },
+            {
+                "id": 5,
+                "name": "ГОРЯЧИЕ БЛЮДА"
+            },
+            {
+                "id": 6,
+                "name": "ДЕСЕРТЫ"
+            },
+            {
+                "id": 7,
+                "name": "НАПИТКИ"
+            }
+        ],
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*",
+            "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding",
+            "X-Content-Type-Options": "nosniff",
+            "x-frame-options": "DENY",
+            "x-xss-protection": "1; mode=block"
+        }
+    }
+}

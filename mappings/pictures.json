@@ -1,0 +1,104 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/pictures"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "id": 1,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 2,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 3,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 4,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 5,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 6,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 7,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 8,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 9,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 10,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 11,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      },
+      {
+        "id": 12,
+        "name": "name ",
+        "title": "title",
+        "description": "description",
+        "image": "https://i.ibb.co/yYrx3wt/vangog.jpg"
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding",
+      "X-Content-Type-Options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-xss-protection": "1; mode=block"
+    }
+  }
+}
