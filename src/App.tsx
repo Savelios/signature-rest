@@ -65,7 +65,7 @@ function App() {
     if (location.pathname === "/pictures" && windowSize.current[0] > 0) {
       footer[0].setAttribute("style", "display:none;");
     } else {
-      footer[0].setAttribute("style", "display:flex;");
+      footer[0].setAttribute("style", "display:none;");
     }
   }, [location]);
 
