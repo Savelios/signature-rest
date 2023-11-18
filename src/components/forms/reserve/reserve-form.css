@@ -1,9 +1,10 @@
-.main-reserve-container {
+.reserve__container {
 	position: fixed;
 	top: 0;
 
 	display: flex;
 	justify-content: center;
+	align-items: center;
 
 	width: 100%;
 	height: 100%;
@@ -14,215 +15,115 @@
 	backdrop-filter: blur(5px);
 }
 
-.reserve-layout-img {
-	position: absolute;
-	z-index: -1;
-
-	display: none;
-
-	width: 100vw;
-	height: 100vh;
-}
-
-.reserve-container {
+.reserve__form {
 	z-index: 9999;
 
-	flex-direction: column;
+	width: 650px;
+	height: 744px;
 
-	width: 500px;
-	height: 589px;
-	margin: 50px;
-
-	border: 1px solid #666;
 	border-radius: 15px;
 	background-color: #002024;
-
-	font-family:
-		"Lucida Sans",
-		"Lucida Sans Regular",
-		"Lucida Grande",
-		"Lucida Sans Unicode",
-		Geneva,
-		Verdana,
-		sans-serif;
-}
-
-.reserve-vertical-line {
-	position: absolute;
-
-	display: flex;
-	justify-content: center;
-
-	width: 4.5px;
-	height: 532px;
-	margin-top: 55px;
-	margin-right: 10px;
-	margin-left: 25px;
-
-	background-color: #91793A;
-}
-
-.reserve-close-button {
-	position: absolute;
-	top: 13px;
-	right: 13px;
-
-	display: flex;
-
-	width: 18px;
-
-	cursor: pointer;
-}
-
-.reserve-title {
-	display: flex;
-	justify-content: center;
-
-	margin: 50px;
-
-	color: #91793A;
-
-	font-family: 'Futura New';
-}
-
-.reserve-title-last-word {
-	margin: 0;
-	margin-left: 10px;
-
-	font-weight: 100;
-}
-
-.input-items-main-container {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.input-items-container {
+	color: rgb(255, 255, 255);
 	display: flex;
 	flex-direction: column;
-
-	width: 420px;
+	padding: 0 0 0 97px;
 }
 
-.name-prefix-label {
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-
-	color: #91793A;
-
-	font-size: 12px;
+.reserve-form__title {
+	color: var(--Gold, #91793A);
+	font-family: Futura New;
+	font-size: 35px;
+	font-style: normal;
 	font-weight: 500;
-	line-height: 15px;
-}
-
-.name-input {
-	margin-bottom: 15px;
-	padding-left: 35px;
-
-	color: #A0AEAF;
-
-	border: none;
-	border-top: 0;
-	border-right: 0;
-	border-bottom: 1px solid #91793A;
-	border-left: 0;
-	outline: none;
-	/* background: url("../../../assets/name-input-icon.png") no-repeat scroll 5px; */
-	background-color: transparent;
-
-	font-size: 18px;
-	font-weight: 300;
-	font-style: normal;
-	line-height: 100%;
-}
-
-.name-input:placeholder-shown {
-	padding-left: 40px;
-
-	font-size: 18px;
-}
-
-.phone-prefix-label {
-	letter-spacing: 0.1em;
+	line-height: 110%;
+	letter-spacing: 1.75px;
 	text-transform: uppercase;
 
-	/* Gold */
+	display: flex;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	height: 49px;
+	flex-shrink: 0;
+}
 
-	color: #91793A;
+.reserve-form__title>p {
+	color: var(--Gold, #91793A);
+	font-family: Futura New;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 1.75px;
+	text-transform: uppercase;
+}
 
+.reserve-form__close-btn {
+	width: 36px;
+	height: 36px;
+	flex-shrink: 0;
+	margin: 6px 512px;
+}
+
+.reserve-form__separator {
+	width: 695px;
+	height: 6px;
+	transform: rotate(-90deg);
+	flex-shrink: 0;
+	background: var(--Gold, #91793A);
+}
+
+.reserve-form__input-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 37px;
+}
+
+.reserve__from_prefix-label {
+	color: var(--Gold, #91793A);
+	font-family: Futura New;
 	font-size: 12px;
+	font-style: normal;
 	font-weight: 500;
-	line-height: 15px;
-}
-
-
-
-.phone-input {
-	margin-bottom: 15px;
-	padding-left: 35px;
-
-	color: #A0AEAF;
-
-	border: none;
-	border-top: 0;
-	border-right: 0;
-	border-bottom: 1px solid #91793A;
-	border-left: 0;
-	outline: none;
-	/* background: url("../../../assets/phone-input-icon.png") no-repeat scroll 5px; */
-	background-color: transparent;
-
-	font-size: 18px;
-	font-weight: 300;
-	font-style: normal;
-	line-height: 100%;
-}
-
-.phone-input:placeholder-shown {
-	padding-left: 40px;
-
-	font-size: 18px;
-}
-
-.date-prefix-label {
-	letter-spacing: 0.1em;
+	line-height: normal;
+	letter-spacing: 1.2px;
 	text-transform: uppercase;
-
-	/* Gold */
-
-	color: #91793A;
-
-	font-size: 12px;
-	font-weight: 100;
-	line-height: 15px;
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 
-.date-input {
-	/* margin-bottom: 15px; */
-	padding: 5px;
-	padding-left: 35px;
-
+.reserve__form_input-value {
 	color: #A0AEAF;
-
-	border: none;
-	border-top: 0;
-	border-right: 0;
-	border-bottom: 1px solid #91793A;
-	border-left: 0;
-	outline: none;
-	/* background: url("../../../assets/date-input-icon.png") no-repeat scroll 5px; */
-	background-color: transparent;
-
-	font-size: 18px;
-
+	font-family: Futura New;
+	font-size: 22px;
 	font-style: normal;
-	line-height: 150%;
+	font-weight: 300;
+	line-height: 100%;
+	border-bottom: 1px solid #91793A;
+	width: 100%;
 }
 
-.date-input:placeholder-shown {
+.reserve__form_input-value:placeholder-shown {
 	padding-left: 40px;
+}
 
+#reserve_uname-id {
+	background: url("../../../assets/name-input-icon.png") no-repeat scroll 5px;
+}
+
+#reserve_phone-id {
+	background: url("../../../assets/phone-input-icon.png") no-repeat scroll 5px;
+}
+
+#reserve__date-id {
+	background: url("../../../assets/date-input-icon.png") no-repeat scroll 5px;
+	padding-left: 40px;
 	font-size: 18px;
+}
+
+#reserve__guest-id {
+	background: url("../../../assets/date-input-icon.png") no-repeat scroll 5px;
 }
 
 input[type="datetime-local"]::-webkit-inner-spin-button,
@@ -231,338 +132,55 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 	appearance: none;
 }
 
-.guest-prefix-label {
-	padding-top: 15px;
-
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-
-	color: #91793A;
-
-	font-size: 12px;
-	font-weight: 500;
-	line-height: 15px;
-}
-
-.guest-input {
-	margin-bottom: 38px;
-	padding-left: 35px;
-
-	color: #A0AEAF;
-
-	border: none;
-	border-top: 0;
-	border-right: 0;
-	border-bottom: 1px solid #91793A;
-	border-left: 0;
-	outline: none;
-	/* background: url("../../../assets/date-input-icon.png") no-repeat scroll 5px; */
-	background-color: transparent;
-
-	font-size: 18px;
-	font-weight: 400;
-	font-style: normal;
-	line-height: 150%;
-}
-
-.guest-input:placeholder-shown {
-	padding-left: 40px;
-
-	font-size: 18px;
-}
-
-.reserve-button {
-	position: relative;
-	left: 30px;
-
+.reserve__form-button {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	width: 320px;
-	height: 45px;
+	width: 395px;
+	height: 60px;
 	padding: 8px 16px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	flex-shrink: 0;
 
-	cursor: pointer;
-	text-align: center;
-	letter-spacing: 0.05em;
-	letter-spacing: 1.25px;
-
-	color: #F7F7F7;
+	border-radius: 15px;
+	background: #91793A;
 
 	color: var(--dark-white, #F6F6F6);
-	border: none;
-	border-radius: 15px;
-	background-color: #91793A;
-
-	font-family: "Futura New";
-	font-size: 18px;
-}
-
-.reminder-container {
-	position: relative;
-	left: 10%;
-
-	display: flex;
-
-	margin-top: 30px;
-}
-
-.reminder-text {
-	position: relative;
-	top: 20%;
-
-	margin: 0;
-	margin-right: 15px;
-
-	color: #A0AEAF;
-
-	font-family: "Futura New";
-	font-size: 18px;
-}
-
-.reminder-info-text {
-	position: relative;
-	top: 25%;
-	left: 10%;
-
-	width: 290px;
-	margin: 0;
-
 	text-align: center;
-
-	color: #63797A;
-
-	font-family: "Futura New";
-
-	font-size: 14px;
+	font-family: Futura New;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	letter-spacing: 1.25px;
+	margin: 60px 110px 44px 48px;
 }
 
-.reserve-logo {
-	display: none;
-}
-
-.bottom-container {
+.reserve__form_reminder-container {
+	color: #A0AEAF;
+	font-family: Futura New;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
 	display: flex;
-	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 0 119px 4px 58px;
 }
 
-.reserve-close-modal-button {
-	display: none;
+.reserve__form_reminder-container>p {
+	padding-right: 18px;
 }
 
-.close-from-container {
-	position: relative;
-}
-
-.reserve-close-form-button {
-	position: absolute;
-	right: 0;
-
-	width: 28px;
-	margin: 3%;
-
-	cursor: pointer;
-}
-
-.reserve-close-form-button-mob {
-	display: none;
-}
-
-@media (width <=2560px) {
-	.reserve-container {
-		width: 650px;
-		height: 744px;
-		margin: 50px;
-	}
-
-	.input-items-container {
-		width: 554px;
-	}
-
-	.reserve-button {
-		width: 395px;
-		height: 60px;
-		font-size: 25px;
-		left: 10%;
-		margin-top: 2vh;
-	}
-
-	.reminder-text {
-		font-size: 22px;
-
-	}
-
-	.reminder-info-text {
-		font-size: 18px;
-		width: 60%;
-	}
-
-	.reserve-vertical-line {
-		height: 69.2%;
-	}
-
-	.bottom-container {
-		position: relative;
-		left: 5%;
-		margin-top: 1vh;
-	}
-
-	.reserve-title {
-		font-size: 35px;
-	}
-
-	.phone-input {
-		padding: 5px 5px 5px 40px;
-	}
-
-	.phone-prefix-label {
-		margin-top: 1vh;
-	}
-
-	.date-prefix-label {
-		margin-top: 1vh;
-	}
-
-	.guest-prefix-label {
-		margin-top: 1vh;
-	}
-
-	.name-prefix-label {
-		padding-bottom: 2vh;
-	}
-
-}
-
-@media (width <=470px) {
-	.reserve-close-form-button {
-		display: none;
-	}
-
-	.reserve-close-form-button-mob {
-		position: absolute;
-
-		top: 28px;
-		left: 10px;
-
-		display: block;
-
-		cursor: pointer;
-	}
-
-	.main-reserve-container {
-		position: fixed;
-		z-index: 1;
-		top: 0;
-	}
-
-	.reserve-vertical-line {
-		display: none;
-	}
-
-	.reserve-close-button {
-		position: absolute;
-		top: 5%;
-		left: 5%;
-
-		width: 35px;
-	}
-
-	.reserve-container {
-		overflow: hidden;
-
-		width: 100vw;
-		height: 100%;
-		margin: 0;
-
-		border-radius: 0;
-	}
-
-	.input-items-main-container {
-		position: relative;
-		top: 20%;
-
-		padding: 28px;
-	}
-
-	.reserve-button {
-		position: sticky;
-		top: 65%;
-
-		width: 100%;
-		height: 30%;
-	}
-
-	.reminder-container {
-		position: relative;
-		top: 15%;
-		left: 2%;
-
-		display: flex;
-	}
-
-	.reserve-title {
-		position: relative;
-		top: 18%;
-		left: 6%;
-
-		display: flex;
-		flex-direction: column;
-
-		width: 100%;
-		margin: 0;
-
-		letter-spacing: 1.75px;
-		text-transform: uppercase;
-
-		color: var(--gold, #91793A);
-
-		font-family: "Futura New";
-		font-size: 35px;
-		line-height: 110%;
-	}
-
-	.reserve-title-last-word {
-		margin: 0;
-
-		font-weight: 100;
-	}
-
-	.reserve-logo {
-		position: absolute;
-		top: 1%;
-		left: 15%;
-
-		display: block;
-
-		width: 317.77px;
-	}
-
-	/* .name-prefix-label {
-
-	} */
-
-	.name-input:placeholder-shown {
-		padding: 10px;
-
-		background: none;
-	}
-
-	.phone-input:placeholder-shown {
-		padding: 10px;
-
-		background: none;
-	}
-
-	.guest-input:placeholder-shown {
-		padding: 10px;
-
-		background: none;
-	}
-
-	.date-input:placeholder-shown {
-		padding: 10px;
-
-		background: none;
-	}
+.reserve__form_reminder-text {
+	color: #63797A;
+	text-align: center;
+	font-family: Futura New;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 0 132px 0 70px;
 }
