@@ -18,10 +18,8 @@ const ReserveForm: React.FC<ModalProps> = ({ onCloseModal }) => {
           <img className="reserve-form__close-btn" src={closeFormBtn} alt="" onClick={onCloseModal} />
           {/* <img className="reserve-close-form-button-mob" src={"closeFormBtnMob"} alt="" onClick={onCloseModal} /> */}
           <img className="reserve-form__logo" src={"reserveLogo"} alt="" />
-          <h2 className="reserve-form__title">ЗАБРОНИРОВАТЬ<span>СТОЛИК</span></h2>
+          <h2 className="reserve-form__title">ЗАБРОНИРОВАТЬ<p>СТОЛИК</p></h2>
           <div className="reserve-form__input-container">
-            {/* <div className="reserve-form__separator"></div> */}
-
             <label className="reserve__from_prefix-label" htmlFor="reserve_uname-id">
               ПРЕДСТАВЬТЕСЬ ПОЖАЛУЙСТА
             </label>
@@ -67,6 +65,7 @@ const ReserveForm: React.FC<ModalProps> = ({ onCloseModal }) => {
               required
             ></input>
           </div>
+          {/* <div className="reserve-form__separator"></div> */}
           <button className="reserve__form-button">Забронировать столик</button>
           <div className="reserve__form_reminder-container">
             <p>Напомнить мне о бронировании</p>

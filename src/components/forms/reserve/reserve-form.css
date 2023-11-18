@@ -34,7 +34,7 @@
 	font-family: Futura New;
 	font-size: 35px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 110%;
 	letter-spacing: 1.75px;
 	text-transform: uppercase;
@@ -56,13 +56,14 @@
 	line-height: 110%;
 	letter-spacing: 1.75px;
 	text-transform: uppercase;
+	margin-left: 10px;
 }
 
 .reserve-form__close-btn {
 	width: 36px;
 	height: 36px;
 	flex-shrink: 0;
-	margin: 6px 512px;
+	margin: 6px 0 0 512px;
 }
 
 .reserve-form__separator {
@@ -85,7 +86,7 @@
 	font-family: Futura New;
 	font-size: 12px;
 	font-style: normal;
-	font-weight: 500;
+		font-weight: 700;
 	line-height: normal;
 	letter-spacing: 1.2px;
 	text-transform: uppercase;
