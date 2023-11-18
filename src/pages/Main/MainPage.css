@@ -1,0 +1,112 @@
+.main__page {
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#main-page__exposition_container {
+    position: relative;
+    width: 405px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 15px 15px 0px 15px;
+    background: var(--White, #FFF);
+    top: 77px;
+    left: 57px;
+}
+
+#main-page__exposition_container-name {
+    display: flex;
+    width: 405px;
+    height: 70px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 15px 15px 0px 15px;
+    background: var(--Gold, #91793A);
+    color: var(--dark-white, #F6F6F6);
+    text-align: center;
+    font-family: Futura New;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 39px */
+    letter-spacing: 1.3px;
+    text-decoration-line: underline;
+}
+
+#main-page__exposition_container-content {
+    color: var(--Gold, #91793A);
+    text-align: center;
+    font-family: Futura New;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 22.5px */
+    letter-spacing: 0.9px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#artistLink {
+    color: var(--Gold, #91793A);
+    font-family: Futura New;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.9px;
+    text-decoration-line: underline;
+
+}
+
+#main-page__exposition-line {
+    position: relative;
+    z-index: -1;
+    bottom: 36px;
+    left: 430px;
+    width: 114.634px;
+}
+
+#main-page__reserve-container {
+    display: flex;
+    width: 405px;
+    height: 70px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+
+    border-radius: 0px 15px 15px 15px;
+    background: var(--Gold, #91793A);
+
+    color: var(--dark-white, #F6F6F6);
+    text-align: center;
+    font-family: Futura New;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 39px */
+    letter-spacing: 1.3px;
+    text-decoration-line: underline;
+
+    position: relative;
+    top: 427px;
+    left: 178px;
+}
+
+#main-page__reserve-line {
+    position: relative;
+    top: 292px;
+    left: 380px;
+    z-index: -1;
+}
