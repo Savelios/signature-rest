@@ -1,0 +1,23 @@
+.dish__list_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 258px;
+    margin-top: 170px;
+}
+
+.dish__list_items-container {
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.left-plate {
+    height: 556px;
+    flex-shrink: 0;
+}
+
+.right-plate {
+    height: 556px;
+    flex-shrink: 0;
+}

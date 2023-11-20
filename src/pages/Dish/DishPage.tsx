@@ -1,10 +1,12 @@
-import React from 'react'
-import './DishPage.css'
+import React from "react";
+import "./DishPage.css";
 
-const MenuPage = () => {
+import { DishList } from "../../components/lists/dish/dish-list";
+
+export function DishPage() {
   return (
-    <div>MenuPage</div>
-  )
+    <>
+      <DishList />
+    </>
+  );
 }
-
-export default MenuPage

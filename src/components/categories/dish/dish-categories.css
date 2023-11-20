@@ -1,0 +1,40 @@
+.category-indicator-container {
+  z-index: 1;
+
+  padding: 10px 25px;
+
+  cursor: pointer;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.active-dish-indicator {
+  color: rgb(145, 121, 58);
+}
+
+.dish-categories-container {
+  position: absolute;
+  z-index: 1;
+  top: 201px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  color: #a0aeaf;
+  background-color: rgb(0 255 13 / 0%);
+}
+
+.category-name {
+  color: var(--Gray, #A0AEAF);
+  text-align: center;
+  font-family: Futura New;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
