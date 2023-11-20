@@ -6,6 +6,7 @@
     top: 60px;
     min-width: 100vw;
     border-radius: 20px;
+    height: 53vh;
 }
 
 .dish-view__pecularity-container {

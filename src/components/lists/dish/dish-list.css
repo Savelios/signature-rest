@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 258px;
+    margin-bottom: 212px;
     margin-top: 170px;
 }
 
@@ -10,6 +10,7 @@
     display: flex;
     overflow: scroll;
     overflow-y: hidden;
+    height: 58vh;
 }
 
 .left-plate {
