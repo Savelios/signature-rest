@@ -4,6 +4,9 @@ import expositionLine from '../../assets/exposition-line.png'
 import reserveLine from "../../assets/reserve-line.png"
 import menuLine from "../../assets/menu-line.png"
 import guestLine from "../../assets/guest-line.png"
+import contactsLine from "../../assets/contacts-line.png"
+import wineLine from "../../assets/wine-line.png"
+
 
 import menuIco from "../../assets/menu-ico.png"
 import glassIco from "../../assets/glass-ico.png"
@@ -49,6 +52,12 @@ const MainPage = () => {
           <a href="">Подробности...</a>
         </p>
       </div>
+
+      <div id="main-page__contacts-container">Контакты</div>
+      <img id="main-page__contacts-line" src={contactsLine} alt="" />
+
+      <div id="main-page__wine-container">Винная галерея</div>
+      <img id="main-page__wine-line" src={wineLine} alt="" />
     </div>
   )
 }

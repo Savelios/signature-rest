@@ -1,4 +1,5 @@
 import React from 'react'
+import './DishPage.css'
 
 const MenuPage = () => {
   return (
