@@ -17,6 +17,11 @@ import './App.css';
 import "./assets/fonts/fonts.css";
 import ReserveForm from './components/forms/reserve/reserve-form';
 
+import mainBackground from "../src/assets/main-background.png"
+import aboutBackground from "../src/assets/main-background.png"
+import expositionBackground from "../src/assets/main-background.png"
+
+
 
 
 function App() {
@@ -41,13 +46,16 @@ function App() {
   const location = useLocation();
 
   let className = '';
+  let srcUrl;
 
   switch (location.pathname) {
     case '/':
       className = 'main-background';
+      srcUrl = mainBackground;
       break;
     case '/about':
       className = 'gold-background';
+      srcUrl = aboutBackground;
       break;
     case '/pictures':
       className = 'picture-page-background';
@@ -76,8 +84,8 @@ function App() {
   }, [location]);
 
   return (
-    <div className="App">
-      <img className={className} />
+    <div className="page">
+      <img className={className} src={srcUrl} />
       <Header
         onOpenModalMenu={handleOpenModalMenu}
         route={window.location.pathname}
