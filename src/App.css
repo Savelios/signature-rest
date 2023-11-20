@@ -7,7 +7,7 @@ body {
 	background-image: url("/src/assets/main-background.png");
 	position: absolute;
 	height: 100%;
-	width: 100%;
+	width: calc((3500 * (100vh - 31.5vh)) / 1100);
 	background-repeat: no-repeat;
     z-index: -1;
 }
@@ -38,3 +38,4 @@ body {
 	background-repeat: no-repeat;
     z-index: -1;
 }
+
