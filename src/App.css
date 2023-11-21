@@ -19,10 +19,6 @@ body {
 	--white: #FFF;
 }
 
-#root {
-	/* overflow-y: scroll; */
-}
-
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -34,12 +30,6 @@ body {
 }
 
 .gold-background {
-	/* background-image: url("/src/assets/gold-background.png");
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
-	z-index: -1; */
 	position: absolute;
 	z-index: -1;
 	height: 100%;
@@ -47,12 +37,6 @@ body {
 }
 
 .primary-background {
-	/* background-image: url("/src/assets/primary-background.png");
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
-	z-index: -1; */
 	position: absolute;
 	z-index: -1;
 	height: 100%;
@@ -60,13 +44,29 @@ body {
 }
 
 .picture-page-background {
-	/* background-image: url("/src/assets/picture-page-background.png");
-	position: absolute;
-	height: 134%;
-	width: 100%;
-	background-repeat: no-repeat;
-	z-index: -1; */
 	position: absolute;
 	z-index: -1;
 	height: 135%;
+}
+
+@media (width: 2560px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		max-height: 108%;
+		min-width: 100vw;
+	}
+
+	.primary-background {
+		position: absolute;
+		z-index: -1;
+		height: 102%;
+		width: 100vw;
+	}
+
+	.main-background {
+		position: absolute;
+		z-index: -1;
+		height: 104%;
+	}
 }
