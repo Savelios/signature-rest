@@ -4,7 +4,9 @@
 import { Axios } from "axios";
 
 //Mock URL
-const API_BASE_URL: string = "http://localhost:8080/";
+// const API_BASE_URL: string = "http://localhost:8080/";
+
+const API_BASE_URL: string = "http://89.147.109.197:8080/";
 
 // Другие настройки и маршруты вашего сервера
 
