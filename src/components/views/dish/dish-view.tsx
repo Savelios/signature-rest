@@ -42,7 +42,7 @@ export function DishView(props: DishViewProps) {
           </div>
         </div>
 
-        <div style={{ display: "grid", padding: "2vw" }}>
+        <div className="dish-view__dish-plate_container">
           <h1 className="dish-view__dish-name">{dish.name}</h1>
           <img className="dish-view__dish-img" src={dish.image} alt="" />
         </div>
@@ -51,6 +51,20 @@ export function DishView(props: DishViewProps) {
           <div className="dish-view__price-container">
             <p className="dish-view__price-title">2180₽</p>
             <img className="dish-view__basket-img" src={basketImg} alt="" />
+          </div>
+          <p className="dish-view__ingredients-title">Ингредиенты</p>
+          <div className="dish-view__ingredients_list">
+            <p className="dish-view__ingredient-type">Octopus regularis</p>
+            <p className="dish-view__ingredient-type">Tomatus</p>
+            <p className="dish-view__ingredient-type">Sousus</p>
+            <p className="dish-view__ingredient-type">Chesnokus</p>
+          </div>
+          <p className="dish-view__recomendation-title">вкус лучше всего раскроется с</p>
+          <div className="dish-view__recomendation_list">
+            <p className="dish-view__recomendation-type">Поль Роже Брют Резерв</p>
+            <p className="dish-view__recomendation-type">Бласон Руж" Креман Брют</p>
+            <p className="dish-view__recomendation-type">Лансон Блэк Лейбл Брют</p>
+
           </div>
         </div>
       </React.Fragment>

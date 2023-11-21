@@ -1,12 +1,10 @@
 .main__dish-view_container {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     top: 60px;
     min-width: 100vw;
     border-radius: 20px;
-    height: 53vh;
 }
 
 .dish-view__pecularity-container {
@@ -144,6 +142,18 @@
     justify-content: center;
 }
 
+.dish-view__dish-plate_container {
+    display: grid;
+    padding: 2vw;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.dish-view__dish-img {
+    
+}
+
 .dish-view__ingredients-container {
     display: inline-flex;
     height: 650px;
@@ -192,4 +202,82 @@
     /* 67.5px */
     letter-spacing: 2.25px;
     text-transform: uppercase;
+}
+
+.dish-view__ingredients-title {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--White, #FFF);
+    color: var(--Gold, #91793A);
+    font-family: Futura New;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 39px */
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.dish-view__ingredients_list {
+    display: flex;
+    width: 100%;
+    padding: 20px 0 20px 40px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dish-view__ingredient-type {
+    width: 100%;
+    height: 24px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Futura New;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    border-bottom: 1px solid #91793A;
+}
+
+.dish-view__recomendation-title {
+    color: var(--Gray, #A0AEAF);
+    font-family: Futura New;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    /* 22.5px */
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    padding-left: 32.5px;
+}
+
+.dish-view__recomendation_list {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    display: flex;
+    padding: 20px 40px;
+}
+
+.dish-view__recomendation-type {
+    color: #FFF;
+    font-family: Futura New;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    /* 22px */
+    text-decoration-line: underline;
 }

@@ -103,22 +103,26 @@ export function DishList() {
 
   return (
     <div className="dish__list_container">
+
       <DishCategories
         category={category}
         onCategoryClick={handleCategoryChange}
       />
+
       <img
         src={leftPlateImg}
         alt=""
         className="left-plate"
         onClick={scrollLeft}
       />
+
       <div
         id="dishes-list"
         className="dish__list_items-container"
         ref={divRef}
         onScroll={() => setIsScrolling(true)}
       >
+
 
         {dish.map((dish) => (
           <DishView
@@ -130,6 +134,7 @@ export function DishList() {
         ))}
 
       </div>
+
       <img
         src={rightPlateImg}
         alt=""

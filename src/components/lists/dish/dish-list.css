@@ -2,15 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 212px;
-    margin-top: 170px;
+height: 88vh;
 }
 
 .dish__list_items-container {
     display: flex;
     overflow: scroll;
     overflow-y: hidden;
-    height: 58vh;
+    height: 77vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-plate {
@@ -22,3 +23,4 @@
     height: 556px;
     flex-shrink: 0;
 }
+
