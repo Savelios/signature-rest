@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import MainPage from './pages/Main/MainPage';
 import AboutPage from './pages/About/AboutPage';
 import PicturePage from './pages/Picture/PicturePage';
 import WinePage from './pages/Wine/WinePage';
@@ -21,6 +20,7 @@ import goldBackground from "../src/assets/gold-background.png"
 import primaryBackground from "../src/assets/primary-background.png"
 import pictureBackground from "../src/assets/picture-page-background.png"
 import { DishPage } from './pages/Dish/DishPage';
+import { MainPage } from './pages/Main/MainPage';
 
 
 
@@ -96,7 +96,7 @@ function App() {
         route={window.location.pathname}
       />
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<MainPage onOpenModal={handleOpenModal} />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/pictures" element={<PicturePage onOpenModal={handleOpenModal} />} />
         <Route path="/menu" element={<DishPage />} />

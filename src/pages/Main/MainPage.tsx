@@ -12,21 +12,34 @@ import menuIco from "../../assets/menu-ico.png"
 import glassIco from "../../assets/glass-ico.png"
 import menuSeparatorIco from "../../assets/menu-separator.png"
 import aboutImg from "../../assets/main-about-img.png"
+import { useNavigate } from 'react-router-dom'
 
-const MainPage = () => {
+
+type ModalProps = {
+  onOpenModal: () => void;
+};
+
+export const MainPage: React.FC<ModalProps> = ({
+
+  onOpenModal,
+
+}) => {
+
+  const navigate = useNavigate();
+
   return (
     <div className='main__page'>
       <div id="main-page__exposition_container">
-        <p id="main-page__exposition_container-name">Экспозиция</p>
+        <p id="main-page__exposition_container-name" onClick={() => navigate("/pictures")}>Экспозиция</p>
         <p id="main-page__exposition_container-content">C 23 марта у нас проходит выставка трех художников – @ivan_fedotov_art @oksanazarova, @pechenevskayalili</p>
       </div>
       <img id="main-page__exposition-line" src={expositionLine} alt="" />
 
-      <div id="main-page__reserve-container">Забронировать столик</div>
+      <div id="main-page__reserve-container" onClick={onOpenModal}>Забронировать столик</div>
       <img id="main-page__reserve-line" src={reserveLine} alt="" />
 
       <div id="main-page__menu_container">
-        <p id="main-page__menu_container-name">Меню</p>
+        <p id="main-page__menu_container-name" onClick={() => navigate("/menu")}>Меню</p>
         <p id="main-page__menu_container-content">
           <div id="main__page_menu-content">
             <img src={menuIco} alt="" />
@@ -46,20 +59,18 @@ const MainPage = () => {
       <img id="main-page__guest-line" src={guestLine} alt="" />
 
       <div id="main-page__about_container">
-        <p id="main-page__about_container-name">Экспозиция</p>
+        <p id="main-page__about_container-name" onClick={() => navigate("/about")}>О нас</p>
         <p id="main-page__about_container-content">
           Наш ресторан Signature Art транслирует уникальную концепцию арт-пространства. Мы дарим гостям новый опыт, возможность прожить новый экспириенс – стать ценителем искусства и дегустатором.
           <a href="">Подробности...</a>
         </p>
       </div>
 
-      <div id="main-page__contacts-container">Контакты</div>
+      <div id="main-page__contacts-container" onClick={() => navigate("/contacts")}>Контакты</div>
       <img id="main-page__contacts-line" src={contactsLine} alt="" />
 
-      <div id="main-page__wine-container">Винная галерея</div>
+      <div id="main-page__wine-container" onClick={() => navigate("/wine")}>Винная галерея</div>
       <img id="main-page__wine-line" src={wineLine} alt="" />
     </div>
   )
 }
-
-export default MainPage
