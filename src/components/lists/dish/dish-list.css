@@ -1,8 +1,10 @@
 .dish__list_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
     height: 88vh;
+    width: 100vw;
 }
 
 .dish__list_items-container {
@@ -14,13 +16,20 @@
     align-items: center;
 }
 
+
+
 .left-plate {
+    position: absolute;
     height: 556px;
     flex-shrink: 0;
+    top: 30vh;
+    z-index: 1;
 }
 
 .right-plate {
+    right: 0;
+    position: absolute;
     height: 556px;
     flex-shrink: 0;
+    top: 30vh;
 }
-
