@@ -142,17 +142,27 @@
     justify-content: center;
 }
 
+.dish-view__dish-name-container {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .dish-view__dish-plate_container {
     display: grid;
-    padding: 2vw;
+    padding: 0px 3vw;
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
 }
 
-.dish-view__dish-img {
-    
-}
+.dish-view__dish-img {}
 
 .dish-view__ingredients-container {
     display: inline-flex;

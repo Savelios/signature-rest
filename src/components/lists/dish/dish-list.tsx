@@ -122,8 +122,6 @@ export function DishList() {
         ref={divRef}
         onScroll={() => setIsScrolling(true)}
       >
-
-
         {dish.map((dish) => (
           <DishView
             key={dish.id}

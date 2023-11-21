@@ -41,9 +41,10 @@ export function DishView(props: DishViewProps) {
             <p className="alergic-reaction-type">Tomatus</p>
           </div>
         </div>
-
-        <div className="dish-view__dish-plate_container">
+        <div className="dish-view__dish-name-container">
           <h1 className="dish-view__dish-name">{dish.name}</h1>
+        </div>
+        <div className="dish-view__dish-plate_container">
           <img className="dish-view__dish-img" src={dish.image} alt="" />
         </div>
 
