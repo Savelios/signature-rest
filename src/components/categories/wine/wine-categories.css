@@ -1,18 +1,16 @@
-.indicators {
+.indicators__container {
 	position: absolute;
 
 	display: flex;
 	justify-content: center;
-
-	margin-top: 20px;
-
-	border-radius: 15px;
 }
 
-.indicators-container {
+/* .indicators-container {
+	left: 261px;
+	top: 30px;
     position: relative;
     z-index: 1;
-}
+} */
 
 .indicator {
 	position: relative;

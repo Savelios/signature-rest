@@ -34,10 +34,9 @@ const WineIndicator = () => {
   };
 
   return (
-    <div className="indicators-container">
-      {/* <div className="shape">{activeIndex}</div> */}
-      <div className="indicators">{renderIndicators()}</div>
-    </div>
+    <>
+      <div className="indicators__container">{renderIndicators()}</div>
+    </>
   );
 };
 

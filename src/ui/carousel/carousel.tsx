@@ -94,7 +94,7 @@ export function Carousel({ wines, onImageClick }: CarouselProps) {
   }
 
   return (
-    <div className="carousel">
+    <div className="carousel__container">
       {wines.map((wine, index) => {
         const position = getPosition(index)
         const positionProps = positionProperties[position.position]

@@ -32,15 +32,13 @@ export function WineList() {
 
   return (
     <div className="wine-list__container" >
-      <img className="wine__top-img" src={"wineTopImg"} alt="" />
-      <div className="carousel__container">
+      <div style={{display: 'flex', justifyContent: 'center'}}>
         <WineIndicator />
         <Carousel
           wines={wines}
           onImageClick={handleWineImageChange}
         />
       </div>
-
       {wines.length > 0 && (
         <>
           <WineView
@@ -54,5 +52,4 @@ export function WineList() {
 
     </div>
   );
-
 }
