@@ -82,3 +82,33 @@ body {
 		width: 100vw;
 	}
 }
+
+
+@media (width <=1620px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		height: 108%;
+		width: 100vw;
+	}
+}
+
+@media (width <=1366px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		height: 110%;
+		width: 100vw;
+		max-height: 110%;
+	}
+}
+
+@media (width <=1050px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		height: 115%;
+		width: 100vw;
+		max-height: 115%;
+	}
+}
