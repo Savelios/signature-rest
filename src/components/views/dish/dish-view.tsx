@@ -21,18 +21,18 @@ export function DishView(props: DishViewProps) {
         <div className="dish-view__pecularity-container">
           <p className="pecularity__name">особенности</p>
           <div className="pecularity__calories_container">
-            <label className="label-text">калорийность</label>
+            <label className="label-title">калорийность</label>
             <p className="calories__value">300 Ккал / 100 г.</p>
           </div>
           <div className="pecularity__fats_container">
-            <label className="label-text">белки
-              <p className="label-text-value" id="protein-value">12% 120г.</p>
+            <label className="label-title">белки
+              <p className="label-title-value" id="protein-value">12% 120г.</p>
             </label>
-            <label className="label-text">жиры
-              <p className="label-text-value" id="fat-value">12% 8г.</p>
+            <label className="label-title">жиры
+              <p className="label-title-value" id="fat-value">12% 8г.</p>
             </label>
-            <label className="label-text">углеводы
-              <p className="label-text-value" id="carbohydrates-value">12% 8г.</p>
+            <label className="label-title">углеводы
+              <p className="label-title-value" id="carbohydrates-value">12% 8г.</p>
             </label>
           </div>
           <p className="alergic-reaction_title">аллергические реакции </p>

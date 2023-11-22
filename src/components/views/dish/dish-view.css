@@ -37,19 +37,9 @@
     text-transform: uppercase;
 }
 
-.label-text {
-    flex-shrink: 0;
-    color: var(--Gold, #91793A);
-    font-family: Futura New;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
 
-.label-text-value {
+
+.label-title-value {
     padding-top: 9px;
     color: #A0AEAF;
     font-family: Futura New;

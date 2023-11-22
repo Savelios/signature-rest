@@ -8,6 +8,7 @@
 	bottom: 636px;
 	display: flex;
 	justify-content: flex-end;
+	margin-top: 150px;
 }
 
 .wine-view__content {
