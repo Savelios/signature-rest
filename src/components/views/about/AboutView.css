@@ -331,6 +331,171 @@
 }
 
 
+@media(width <=1366px) {
+
+    .about-view__card {
+        width: 360px;
+        height: 660px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 17px;
+    }
+
+
+    #about-view__first-card>h1 {
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 2.25px;
+        text-transform: uppercase;
+        padding-top: 84px;
+    }
+
+    #about-view__first-card>h1>span {
+        color: #FFF;
+        font-family: Futura New;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 2.25px;
+        text-transform: uppercase;
+    }
+
+    #about-view__first-card>p {
+        padding: 81px 40px 38px 40px;
+        color: #FFF;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 1.1px;
+    }
+
+    #about-view__first-card>button {
+        margin: 0 0 265px 0;
+        display: flex;
+        width: 297px;
+        height: 49px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        border: 2px solid #FFF;
+        color: #F6F6F6;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 1.25px;
+        background-color: rgb(105 78 37 / 0%);
+    }
+
+
+    #about-view__second-card>h1 {
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 2.25px;
+        text-transform: uppercase;
+        padding-top: 0px;
+    }
+
+
+    #about-view__second-card>h1>span {
+        color: #FFF;
+        font-family: Futura New;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 2.25px;
+        text-transform: uppercase;
+    }
+
+
+    #about-view__second-card>p {
+        padding: 0px 40px 0px 40px;
+        color: #FFF;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 1.1px;
+    }
+
+
+    #about-view__third-card>h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 2.25px;
+        text-transform: uppercase;
+        padding-top: 0px;
+    }
+
+    #about-view__third-card>h1>span {
+        color: #FFF;
+        font-family: Futura New;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 1.75px;
+        text-transform: uppercase;
+
+
+    }
+
+    .about-view__card-metals {
+        width: 450px;
+        padding: 150px 40px 15px 40px;
+    }
+
+    #about-view__third-card>p {
+        padding: 0px 40px 160px 40px;
+        color: #FFF;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 1.1px;
+        width: 380px;
+    }
+
+}
+
+
 @media(width <=876px) {
     .about-view__card {
         width: 230px;

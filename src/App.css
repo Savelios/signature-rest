@@ -88,3 +88,13 @@ body {
 		width: 100vw;
 	}
 }
+
+@media (width <=1366px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		height: 110%;
+		width: 100vw;
+		max-height: 110%;
+	}
+}
