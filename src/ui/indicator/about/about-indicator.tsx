@@ -9,7 +9,7 @@ export const AboutIndicators = () => {
             {
                 [0, 1, 2, 3, 4].map(index => {
                     return (
-                        <div className="about-vew__indicator-container"
+                        <div className="about-view__indicator-container"
                             style={{
                                 width: 10,
                                 borderRadius: 50,
