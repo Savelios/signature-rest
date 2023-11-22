@@ -1,0 +1,142 @@
+.wine-view__container {
+	max-width: 860px;
+	width: 100%;
+	height: 674px;
+	flex-shrink: 0;
+	background: var(--primary);
+	border-radius: 15px;
+	bottom: 636px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.wine-view__content {
+	max-width: 764px;
+	height: 561px;
+	width: 100%;
+	
+}
+
+.wine-view__separator {
+	background-color: var(--gold);
+	width: 6px;
+	height: 87%;
+	margin-right: 7%;
+	margin-top: 10.3%;
+}
+
+.wine-view__title {
+	color: var(--gold);
+	max-width: 700px;
+	height: 80px;
+	font-family: Futura New;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 2.25px;
+	text-transform: uppercase;
+}
+
+.wine-view__title-2 {
+	color: var(--gold);
+	font-family: Futura New;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.wine__value-style {
+	border-bottom: solid 1px var(--gold);
+	border-top: 6px;
+	color: #A0AEAF;
+	font-family: Futura New;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 100%;
+	display: flex;
+	height: 60%;
+}
+
+.wine-view__label {
+	color: var(--gold);
+}
+
+.wine-view__section-1-container {
+	display: flex;
+}
+
+.wine-view__section-container {
+	display: flex;
+	margin-top: 20px;
+}
+
+#wine-view__section-2 {
+	margin: 0 40px 0 40px;
+}
+
+#wine__type-value {
+	width: 360.814px;
+}
+
+#wine-view__type-label {
+	width: 330.215px;
+}
+
+#wine__strength-value {
+	width: 160.184px;
+}
+
+#wine__volume-value {
+	width: 160.184px;
+}
+
+#wine__region-value {
+	width: 360.814px;
+}
+
+#wine__manufacter-value {
+	width: 360.814px;
+}
+
+#wine__grape-value {
+	width: 762.621px;
+}
+
+#wine__additionally-value {
+	width: 762.621px;
+	border-bottom: none;
+}
+
+.wine-view__btn {
+	display: flex;
+	width: 275px;
+	height: 40px;
+	padding: 8px 16px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	flex-shrink: 0;
+	cursor: pointer;
+	background-color: transparent;
+	border-radius: 10px;
+	border: 1px solid var(--gray);
+	color: var(--gray);
+	margin-bottom: 46px;
+	margin-top: 9px;
+}
+
+.manufacter__container {
+	margin-left: 40px;
+}
+
+#wine__idealFor-value {
+	width: 762.621px;
+}
+
+	

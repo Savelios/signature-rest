@@ -1,0 +1,112 @@
+.indicators {
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+
+	margin-top: 20px;
+
+	border-radius: 15px;
+}
+
+.indicators-container {
+    position: relative;
+    z-index: 1;
+}
+
+.indicator {
+	position: relative;
+	top: 10px;
+
+	width: 35px;
+	height: 35px;
+	margin: 0 15px;
+
+	cursor: pointer;
+
+	border-radius: 50%;
+	background-color: green;
+}
+
+.indicator.active {
+	opacity: 1;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(255 255 255);
+	box-shadow: 0 0 33px 5px #91793A;
+}
+
+.indicator-name {
+	color: #91793A;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.indicator-names-container {
+	position: absolute;
+	top: 50px;
+	left: -8px;
+
+	font-family: "Futura New";
+}
+
+.gold-dot {
+	background-color: rgb(145 121 58 / 100%);
+}
+
+.red-dot {
+	background-color: rgb(138 5 20 / 100%);
+}
+
+.white-dot {
+	background-color: rgb(217 200 140 / 100%);
+}
+
+.pink-dot {
+	background-color: rgb(231 138 163 / 100%);
+}
+
+.spark-dot {
+	background-image: url("../../../assets/spark-dot.png");
+	background-position-y: center;
+	background-size: 35px;
+}
+
+
+
+@media (width <=1940px) {
+	.indicators-container {
+		position: relative;
+		z-index: 1;
+
+	}
+}
+
+@media (width <=1518px) {
+	.indicators-container {
+		position: relative;
+		z-index: 1;
+
+	}
+}
+
+@media (width <=800px) {
+	.indicators-container {
+		position: relative;
+		z-index: 1;
+		top: 10vh;
+		left: 20%;
+	}
+}
+
+
+@media (width <=740px) {
+	.indicators-container {
+		position: relative;
+		z-index: 1;
+		top: -10vh;
+		left: 8%;
+	}
+}
+
+

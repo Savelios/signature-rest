@@ -1,4 +1,4 @@
-.category-indicator-container {
+.dish-category__indicator-container {
   z-index: 1;
 
   padding: 10px 25px;
@@ -6,16 +6,16 @@
   cursor: pointer;
 }
 
-.categories-container {
+.dish__category-container {
   display: flex;
   flex-direction: row;
 }
 
-.active-dish-indicator {
+.active-dish__indicator {
   color: rgb(145, 121, 58);
 }
 
-.dish-categories-container {
+.dish-categories__container {
   position: absolute;
   z-index: 1;
   top: 201px;
@@ -27,7 +27,7 @@
   background-color: rgb(0 255 13 / 0%);
 }
 
-.category-name {
+.dish__category-name {
   color: var(--Gray, #A0AEAF);
   text-align: center;
   font-family: Futura New;

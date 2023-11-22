@@ -10,7 +10,7 @@ import { Header } from './ui/header/header';
 import "./assets/fonts/FuturaNewLight-Reg.woff";
 import "./assets/fonts/FuturaNewLight-Reg.ttf";
 
-import './Reset.css'
+// import './Reset.css'
 import './App.css';
 import "./assets/fonts/fonts.css";
 import ReserveForm from './components/forms/reserve/reserve-form';
@@ -100,7 +100,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/pictures" element={<PicturePage onOpenModal={handleOpenModal} />} />
         <Route path="/menu" element={<DishPage />} />
-        <Route path="/wine" element={<WinePage />} />
+        <Route path="/wine-gallery" element={<WinePage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
       <Footer onOpenModal={handleOpenModal} route={""} />

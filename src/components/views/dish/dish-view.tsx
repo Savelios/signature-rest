@@ -65,7 +65,6 @@ export function DishView(props: DishViewProps) {
             <p className="dish-view__recomendation-type">Поль Роже Брют Резерв</p>
             <p className="dish-view__recomendation-type">Бласон Руж" Креман Брют</p>
             <p className="dish-view__recomendation-type">Лансон Блэк Лейбл Брют</p>
-
           </div>
         </div>
       </React.Fragment>

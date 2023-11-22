@@ -1,0 +1,66 @@
+.carousel {
+	position: relative;
+	top: 10%;
+	left: 5%;
+
+	display: flex;
+	justify-content: unset;
+}
+
+.carousel-img {
+	position: absolute;
+	padding-left: 5px;
+	transition: all 0.5s ease-in-out;
+}
+
+.carousel__container {
+	display: flex;
+	justify-content: center;
+	margin-left: 16%;
+	margin-right: 46px;
+	position: relative;
+	z-index: 0;
+}
+
+.grand {
+	width: 193px;
+	height: 710px;
+	top: 42px;
+	left: 100px;
+}
+
+.second {
+	width: 163.393px;
+	height: 600px;
+	top: 103px;
+}
+
+.third {
+	width: 123px;
+	height: 450px;
+	top: 198px;
+}
+
+.fourth {
+	width: 110px;
+	height: 425px;
+	top: 221px;
+}
+
+.five {
+	width: 100px;
+	height: 366px;
+	top: 230px;
+}
+
+.six {
+	width: 85px;
+	height: 314px;
+	top: 254px;
+}
+
+.hidden {
+	width: 0px;
+	height: 0px;
+	top: 270px;
+}

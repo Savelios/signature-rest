@@ -43,12 +43,12 @@ export function DishCategories({
       return (
         <div
           key={data.id}
-          className={`category-indicator-container ${isActive ? "active-dish-indicator" : ""
+          className={`dish-category__indicator-container ${isActive ? "active-dish__indicator" : ""
             }`}
           onClick={() => handleIndicatorClick(data.id)}
         >
-          <div className="category-container">
-            <div className="category-name">{data.name}</div>
+          <div className="dish__category-container">
+            <div className="dish__category-name">{data.name}</div>
           </div>
         </div>
       );
@@ -56,6 +56,6 @@ export function DishCategories({
   };
 
   return (
-    <div className="dish-categories-container">{renderCategories()}</div>
+    <div className="dish-categories__container">{renderCategories()}</div>
   );
 }
