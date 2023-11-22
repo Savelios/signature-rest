@@ -10,7 +10,7 @@ import { Header } from './ui/header/header';
 import "./assets/fonts/FuturaNewLight-Reg.woff";
 import "./assets/fonts/FuturaNewLight-Reg.ttf";
 
-// import './Reset.css'
+import './Reset.css'
 import './App.css';
 import "./assets/fonts/fonts.css";
 import ReserveForm from './components/forms/reserve/reserve-form';
