@@ -58,7 +58,7 @@ export function WineView(props: WineViewProps) {
           <div className="wine-view__section-container">
             <div>
               <label className="label-title" >ИДЕАЛЬНО ПОДХОДИТ К</label>
-              <p className="wine__value-style" id="wine__idealFor-value">{selectedWine.additionally}</p>
+              <p className="wine__value-style" id="wine__idealFor-value">{selectedWine.additionally}Осьминогу на стейке томата, Палтус с жженым горошком, Томленая ножка кролика с рагу из овощей, Осьминогу на стейке томата, Палтус с жженым горошком, Томленая ножка кролика с рагу из овощей</p>
             </div>
           </div>
           <div className="wine-view__section-container">
