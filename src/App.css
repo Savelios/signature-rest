@@ -49,12 +49,6 @@ body {
 
 @media (width <=2560px) {
 
-	.main-background {
-		position: absolute;
-		z-index: -1;
-		height: 104%;
-	}
-
 	.gold-background {
 		position: absolute;
 		z-index: -1;
