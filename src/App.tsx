@@ -13,6 +13,7 @@ import "./assets/fonts/FuturaNewLight-Reg.ttf";
 import './Reset.css'
 import './App.css';
 import "./assets/fonts/fonts.css";
+
 import ReserveForm from './components/forms/reserve/reserve-form';
 
 import mainBackground from "../src/assets/main-background.png"
@@ -21,8 +22,6 @@ import primaryBackground from "../src/assets/primary-background.png"
 import pictureBackground from "../src/assets/picture-page-background.png"
 import { DishPage } from './pages/Dish/DishPage';
 import { MainPage } from './pages/Main/MainPage';
-
-
 
 
 function App() {
@@ -51,8 +50,8 @@ function App() {
 
   switch (location.pathname) {
     case '/':
-      className = 'main-background';
-      srcUrl = mainBackground;
+      // className = 'main-background';
+      // srcUrl = mainBackground;
       break;
     case '/about':
       className = 'gold-background';
