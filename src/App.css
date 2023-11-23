@@ -22,15 +22,10 @@ body {
 }
 
 .main-background {
-	/* position: absolute;
-	z-index: -1;
-	width: 3500px; */
-
 	background-image: url("/src/assets/main-background.png");
 	width: calc((3500 * (100vh - 12.5vh)) / 1100);
 	height: calc(100vh - 0vh);
 	background-repeat: no-repeat;
-
 }
 
 .gold-background {
@@ -66,7 +61,6 @@ body {
 }
 
 @media (width <=2560px) {
-
 	.gold-background {
 		position: absolute;
 		z-index: -1;

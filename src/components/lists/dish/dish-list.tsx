@@ -8,6 +8,7 @@ import CategoryData from "../../../dto/data/category-data";
 import "./dish-list.css";
 import { DishView } from "../../views/dish/dish-view";
 import { DishCategories } from "../../categories/dish/dish-categories";
+import Loader from "../../../ui/loader/loader";
 
 export function DishList() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -103,19 +104,16 @@ export function DishList() {
 
   return (
     <div className="dish__list_container">
-
       <DishCategories
         category={category}
         onCategoryClick={handleCategoryChange}
       />
-
       <img
         src={leftPlateImg}
         alt=""
         className="left-plate"
         onClick={scrollLeft}
       />
-
       <div
         id="dishes-list"
         className="dish__list_items-container"
@@ -130,9 +128,7 @@ export function DishList() {
             selectedCategory={selectedCategory}
           />
         ))}
-
       </div>
-
       <img
         src={rightPlateImg}
         alt=""
