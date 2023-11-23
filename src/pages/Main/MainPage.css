@@ -1,4 +1,18 @@
-.main__page {}
+.main__page {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+
+	width: 100%;
+	height: calc(100vh - 0vh);
+}
+
+.main-background-img {
+
+}
 
 #main-page__exposition_container {
     position: relative;
