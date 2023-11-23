@@ -5,6 +5,7 @@ import { PictureService } from "../../../services/PictureService";
 import { PictureView } from "../../views/picture/PictureView";
 
 import './picture-list.css'
+import Loader from "../../../ui/loader/loader";
 
 export function PictureList() {
   const pictureService = new PictureService();
@@ -58,16 +59,21 @@ export function PictureList() {
 
   return (
     <>
-      <PictureIndicators
-        id={pictures}
-        activeIndex={activePictureIndex}
-        onIndicatorClick={handleIndicatorClick}
-      />
-      <PictureView
-        onImageClick={handleImageClick}
-        selectedPictureIndex={activePictureIndex}
-        pictures={pictures}
-      />
+      {pictures.length > 0 && (
+        <>
+          <PictureIndicators
+            id={pictures}
+            activeIndex={activePictureIndex}
+            onIndicatorClick={handleIndicatorClick}
+          />
+          <PictureView
+            onImageClick={handleImageClick}
+            selectedPictureIndex={activePictureIndex}
+            pictures={pictures}
+          />
+        </>
+      )}
+      {pictures.length === 0 && <Loader />}
     </>
   );
 }

@@ -5,6 +5,7 @@ import { WineService } from "../../../services/WineService";
 import WineData from "../../../dto/data/wine-data";
 import { Carousel } from "../../../ui/carousel/carousel";
 import "./WineList.css";
+import Loader from "../../../ui/loader/loader";
 // import wineTopImg from "../../../asset  s/wines-top-img.png"
 
 export function WineList() {
@@ -32,15 +33,16 @@ export function WineList() {
 
   return (
     <div className="wine-list__container" >
-      <div style={{display: 'flex', justifyContent: 'center'}}>
-        <WineIndicator />
-        <Carousel
-          wines={wines}
-          onImageClick={handleWineImageChange}
-        />
-      </div>
+
       {wines.length > 0 && (
         <>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <WineIndicator />
+            <Carousel
+              wines={wines}
+              onImageClick={handleWineImageChange}
+            />
+          </div>
           <WineView
             wines={wines}
             selectedWineIndex={selectedImageIndex}
@@ -48,8 +50,7 @@ export function WineList() {
           />
         </>
       )}
-      {wines.length === 0 && <p>Loading...</p>}
-
+      {wines.length === 0 && <Loader />}
     </div>
   );
 }
