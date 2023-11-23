@@ -13,14 +13,14 @@
 .main-background-img {}
 
 #main-page__exposition_container {
-    position: relative;
+    position: absolute;
     width: 405px;
     height: 190px;
     flex-shrink: 0;
     border-radius: 15px 15px 0px 15px;
     background: var(--White, #FFF);
-    top: 77px;
-    left: 57px;
+    top: 240px;
+    left: 50px;
 }
 
 #main-page__exposition_container-name {
@@ -75,7 +75,7 @@
 }
 
 #main-page__exposition-line {
-    position: relative;
+    position: absolute;
     z-index: -1;
     bottom: 36px;
     left: 430px;
@@ -106,13 +106,13 @@
     letter-spacing: 1.3px;
     text-decoration-line: underline;
 
-    position: relative;
-    top: 427px;
-    left: 178px;
+    position: absolute;
+    bottom: 183px;
+    left: 228px;
 }
 
 #main-page__reserve-line {
-    position: relative;
+    position: absolute;
     top: 292px;
     left: 380px;
     z-index: -1;
@@ -124,10 +124,9 @@
     flex-shrink: 0;
     border-radius: 15px;
     background: var(--White, #FFF);
-    position: relative;
+    position: absolute;
     left: 810px;
-    top: 85px;
-    margin-bottom: 151px;
+    bottom: 105px;
 }
 
 #main-page__menu_container-name {
