@@ -5,7 +5,7 @@ export const AboutIndicators = () => {
     const [selectedDot, setSelectedDot] = useState<number>(0)
 
     return (
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", margin: 5, gap: 30, width: "100vw" }} >
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: 30, width: "100vw" }} >
             {
                 [0, 1, 2, 3, 4].map(index => {
                     return (

@@ -70,8 +70,8 @@ body {
 	.gold-background {
 		position: absolute;
 		z-index: -1;
-		max-height: 108%;
-		min-width: 100vw;
+		width: 100vw;
+		height: 100vh;
 	}
 
 	.primary-background {
