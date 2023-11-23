@@ -1,18 +1,16 @@
 .main__page {
-	position: absolute;
-	z-index: -1;
-	top: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
 
-	overflow-x: auto;
-	overflow-y: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 
-	width: 100%;
-	height: calc(100vh - 0vh);
+    width: 100%;
+    height: calc(100vh - 0vh);
 }
 
-.main-background-img {
-
-}
+.main-background-img {}
 
 #main-page__exposition_container {
     position: relative;
@@ -376,4 +374,10 @@
     position: absolute;
     top: 412.8px;
     left: 3025px;
+}
+
+@media (width <=2560px) {
+    .main-background-img {
+        height: 101vh;
+    }
 }

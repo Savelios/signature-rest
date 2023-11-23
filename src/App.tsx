@@ -82,13 +82,34 @@ function App() {
     const footer = document.getElementsByClassName("footer");
     if (location.pathname === "/pictures" && windowSize.current[0] > 0) {
       footer[0].setAttribute("style", "display:none;");
-    } else if (location.pathname === "/" && windowSize.current[0] > 0) {
-      footer[0].setAttribute("style", "top:80.8vh; position:absolute; height:unset;");
     } else {
       footer[0].setAttribute("style", "display:flex; position:unset; height:100%;");
     }
 
   }, [location]);
+
+
+  useEffect(() => {
+    const footer = document.getElementsByClassName("footer");
+    if (location.pathname === "/" && windowSize.current[0] <= 3000) {
+      footer[0].setAttribute("style", "top:100vh; position:absolute; height:unset;");
+    } else {
+      footer[0].setAttribute("style", "display:flex; position:unset; height:100%;");
+    }
+
+  }, [location]);
+
+  // useEffect(() => {
+  //   const footer = document.getElementsByClassName("footer");
+  //   if (location.pathname === "/" && windowSize.current[0] <= 2560) {
+  //     footer[0].setAttribute("style", "top:100vh; position:absolute; height:unset; ");
+  //   } else {
+  //     footer[0].setAttribute("style", "display:flex; position:unset; height:100%;");
+  //   }
+
+  // }, [location]);
+
+
 
   return (
     <div className="page">
