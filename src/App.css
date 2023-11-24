@@ -103,6 +103,23 @@ body {
 	}
 }
 
+@media (width <=1280px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		height: 119%;
+		width: 100vw;
+		max-height: 118%;
+	}
+
+	.picture-page-background {
+		position: absolute;
+		z-index: -1;
+		height: 144%;
+		width: 100vw;
+	}
+}
+
 @media (width <=1050px) {
 	.gold-background {
 		position: absolute;
