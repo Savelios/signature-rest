@@ -50,8 +50,8 @@ function App() {
 
   switch (location.pathname) {
     case '/':
-      // className = 'main-background';
-      // srcUrl = mainBackground;
+      className = 'main-background';
+      srcUrl = mainBackground;
       break;
     case '/about':
       className = 'gold-background';
@@ -83,7 +83,7 @@ function App() {
     if (location.pathname === "/pictures" && windowSize.current[0] > 0) {
       footer[0].setAttribute("style", "display:none;");
     } else {
-      footer[0].setAttribute("style", "display:flex; position:absolute; height:unset; top:100vh;");
+      footer[0].setAttribute("style", "display:flex;  height:unset; ");
     }
 
   }, [location]);
@@ -112,20 +112,24 @@ function App() {
 
 
   return (
-    <div className="page">
-      <img className={className} src={srcUrl} />
-      <Header
-        onOpenModalMenu={handleOpenModalMenu}
-        route={window.location.pathname}
-      />
-      <Routes>
-        <Route path="/" element={<MainPage onOpenModal={handleOpenModal} />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/pictures" element={<PicturePage onOpenModal={handleOpenModal} />} />
-        <Route path="/menu" element={<DishPage />} />
-        <Route path="/wine-gallery" element={<WinePage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
-      </Routes>
+    <div className="App">
+      {/* <img className={className} src={srcUrl} /> */}
+      <div className='container'>
+        <div className={className} style={{backgroundImage: `url(${srcUrl})`, zIndex: "-1"}}>
+          <Header
+            onOpenModalMenu={handleOpenModalMenu}
+            route={window.location.pathname}
+          />
+          <Routes>
+            <Route path="/" element={<MainPage onOpenModal={handleOpenModal} />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/pictures" element={<PicturePage onOpenModal={handleOpenModal} />} />
+            <Route path="/menu" element={<DishPage />} />
+            <Route path="/wine-gallery" element={<WinePage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+          </Routes>
+        </div>
+      </div>
       <Footer onOpenModal={handleOpenModal} route={""} />
       {isModalOpen && <ReserveForm onCloseModal={handleCloseModal} />}
     </div>
