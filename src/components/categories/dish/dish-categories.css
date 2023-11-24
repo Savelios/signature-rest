@@ -17,7 +17,7 @@
 
 .dish-categories__container {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 201px;
   display: flex;
   justify-content: center;
