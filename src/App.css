@@ -115,3 +115,20 @@ body {
 		width: 100vw;
 	}
 }
+
+@media (width <=876px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		height: 115%;
+		width: 100vw;
+		max-height: 115%;
+	}
+
+	.picture-page-background {
+		position: absolute;
+		z-index: -1;
+		height: 162%;
+		width: 100vw;
+	}
+}
