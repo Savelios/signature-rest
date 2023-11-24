@@ -19,10 +19,12 @@ import ReserveForm from './components/forms/reserve/reserve-form';
 import mainBackground from "../src/assets/main-background.png"
 import goldBackground from "../src/assets/gold-background.png"
 import primaryBackground from "../src/assets/primary-background.png"
+
+import wineBackground from "../src/assets/primary-background.png"
+
 import pictureBackground from "../src/assets/picture-page-background.png"
 import { DishPage } from './pages/Dish/DishPage';
 import { MainPage } from './pages/Main/MainPage';
-
 
 function App() {
   const windowSize = useRef<number[]>([window.innerWidth, window.innerHeight]);
@@ -62,8 +64,8 @@ function App() {
       srcUrl = pictureBackground;
       break;
     case '/wine-gallery':
-      className = 'primary-background';
-      srcUrl = primaryBackground;
+      className = 'wine-background';
+      srcUrl = wineBackground;
       break;
     case '/menu':
       className = 'primary-background';
@@ -88,34 +90,11 @@ function App() {
 
   }, [location]);
 
-
-  // useEffect(() => {
-  //   const footer = document.getElementsByClassName("footer");
-  //   if (location.pathname === "/" && windowSize.current[0] <= 3000) {
-  //     footer[0].setAttribute("style", "top:100vh; position:absolute; height:unset;");
-  //   } else {
-  //     footer[0].setAttribute("style", "display:flex; position:unset; height:100%;");
-  //   }
-
-  // }, [location]);
-
-  // useEffect(() => {
-  //   const footer = document.getElementsByClassName("footer");
-  //   if (location.pathname === "/" && windowSize.current[0] <= 2560) {
-  //     footer[0].setAttribute("style", "top:100vh; position:absolute; height:unset; ");
-  //   } else {
-  //     footer[0].setAttribute("style", "display:flex; position:unset; height:100%;");
-  //   }
-
-  // }, [location]);
-
-
-
   return (
     <div className="App">
       {/* <img className={className} src={srcUrl} /> */}
       <div className='container'>
-        <div className={className} style={{backgroundImage: `url(${srcUrl})`, zIndex: "-1"}}>
+        <div className={className} style={{ backgroundImage: `url(${srcUrl})`, zIndex: "-1" }}>
           <Header
             onOpenModalMenu={handleOpenModalMenu}
             route={window.location.pathname}
