@@ -8,9 +8,11 @@
 
     width: 100%;
     height: calc(100vh - 0vh);
+    /* background-image: url("../../assets/main-background.png");
+    background-repeat: no-repeat; */
 }
 
-.main-background-img {}
+.main-background-img {height: 100vh}
 
 #main-page__exposition_container {
     position: absolute;
@@ -76,10 +78,8 @@
 
 #main-page__exposition-line {
     position: absolute;
-    z-index: -1;
-    bottom: 36px;
-    left: 430px;
-    width: 114.634px;
+    top: 335px;
+    left: 455px;
 }
 
 #main-page__reserve-container {
@@ -377,6 +377,6 @@
 
 @media (width <=2560px) {
     .main-background-img {
-        height: 101vh;
+        height: 100vh;
     }
 }

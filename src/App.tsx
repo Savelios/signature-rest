@@ -19,10 +19,12 @@ import ReserveForm from './components/forms/reserve/reserve-form';
 import mainBackground from "../src/assets/main-background.png"
 import goldBackground from "../src/assets/gold-background.png"
 import primaryBackground from "../src/assets/primary-background.png"
+
+import wineBackground from "../src/assets/primary-background.png"
+
 import pictureBackground from "../src/assets/picture-page-background.png"
 import { DishPage } from './pages/Dish/DishPage';
 import { MainPage } from './pages/Main/MainPage';
-
 
 function App() {
   const windowSize = useRef<number[]>([window.innerWidth, window.innerHeight]);
@@ -50,8 +52,8 @@ function App() {
 
   switch (location.pathname) {
     case '/':
-      // className = 'main-background';
-      // srcUrl = mainBackground;
+      className = 'main-background';
+      srcUrl = mainBackground;
       break;
     case '/about':
       className = 'gold-background';
@@ -62,8 +64,8 @@ function App() {
       srcUrl = pictureBackground;
       break;
     case '/wine-gallery':
-      className = 'primary-background';
-      srcUrl = primaryBackground;
+      className = 'wine-background';
+      srcUrl = wineBackground;
       break;
     case '/menu':
       className = 'primary-background';
@@ -83,49 +85,30 @@ function App() {
     if (location.pathname === "/pictures" && windowSize.current[0] > 0) {
       footer[0].setAttribute("style", "display:none;");
     } else {
-      footer[0].setAttribute("style", "display:flex; position:absolute; height:unset; top:100vh;");
+      footer[0].setAttribute("style", "display:flex;  height:unset; ");
     }
 
   }, [location]);
 
-
-  // useEffect(() => {
-  //   const footer = document.getElementsByClassName("footer");
-  //   if (location.pathname === "/" && windowSize.current[0] <= 3000) {
-  //     footer[0].setAttribute("style", "top:100vh; position:absolute; height:unset;");
-  //   } else {
-  //     footer[0].setAttribute("style", "display:flex; position:unset; height:100%;");
-  //   }
-
-  // }, [location]);
-
-  // useEffect(() => {
-  //   const footer = document.getElementsByClassName("footer");
-  //   if (location.pathname === "/" && windowSize.current[0] <= 2560) {
-  //     footer[0].setAttribute("style", "top:100vh; position:absolute; height:unset; ");
-  //   } else {
-  //     footer[0].setAttribute("style", "display:flex; position:unset; height:100%;");
-  //   }
-
-  // }, [location]);
-
-
-
   return (
-    <div className="page">
-      <img className={className} src={srcUrl} />
-      <Header
-        onOpenModalMenu={handleOpenModalMenu}
-        route={window.location.pathname}
-      />
-      <Routes>
-        <Route path="/" element={<MainPage onOpenModal={handleOpenModal} />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/pictures" element={<PicturePage onOpenModal={handleOpenModal} />} />
-        <Route path="/menu" element={<DishPage />} />
-        <Route path="/wine-gallery" element={<WinePage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
-      </Routes>
+    <div className="App">
+      {/* <img className={className} src={srcUrl} /> */}
+      <div className='container'>
+        <div className={className} style={{ backgroundImage: `url(${srcUrl})`, zIndex: "-1" }}>
+          <Header
+            onOpenModalMenu={handleOpenModalMenu}
+            route={window.location.pathname}
+          />
+          <Routes>
+            <Route path="/" element={<MainPage onOpenModal={handleOpenModal} />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/pictures" element={<PicturePage onOpenModal={handleOpenModal} />} />
+            <Route path="/menu" element={<DishPage />} />
+            <Route path="/wine-gallery" element={<WinePage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+          </Routes>
+        </div>
+      </div>
       <Footer onOpenModal={handleOpenModal} route={""} />
       {isModalOpen && <ReserveForm onCloseModal={handleCloseModal} />}
     </div>

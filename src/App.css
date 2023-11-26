@@ -24,26 +24,37 @@ body {
 .main-background {
 	background-image: url("/src/assets/main-background.png");
 	width: calc((3500 * (100vh - 12.5vh)) / 1100);
-	height: calc(100vh - 0vh);
+	height: 1110px; 
 	background-repeat: no-repeat;
 }
 
 .gold-background {
-	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
 	z-index: -1;
-	height: 100vh;
+
 	width: 100vw;
 }
 
 .primary-background {
-	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
 	z-index: -1;
-	height: 100vh;
 	width: 100vw;
 }
 
+.wine-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	width: 100vw;
+	height: 1110px;
+}
+
 .picture-page-background {
-	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: cover;
 	z-index: -1;
 	height: 136%;
 }
@@ -60,44 +71,54 @@ body {
 	text-transform: uppercase;
 }
 
+.container {
+	width: 100%;
+	max-width: 2560px;
+	/* height: 1110px; */
+	overflow-y: hidden;
+}
+
+.bg {
+	width: 3500px;
+	height: 1110px;
+	background-repeat: no-repeat;
+	/* background-image: url("../src/assets//main-background.png"); */
+	background-repeat: no-repeat;
+}
+
+
 @media (width <=2560px) {
 	.gold-background {
-		position: absolute;
 		z-index: -1;
 		width: 100vw;
-		height: 100vh;
+
 	}
 
 	.primary-background {
-		position: absolute;
 		z-index: -1;
 		width: 100vw;
-		height: 100vh;
+
 	}
 
 	.picture-page-background {
-		position: absolute;
 		z-index: -1;
-		height: 136%;
+		height: 143%;
 		width: 100vw;
 	}
 }
 
-
 @media (width <=1620px) {
 	.gold-background {
-		position: absolute;
 		z-index: -1;
-		height: 108%;
+
 		width: 100vw;
 	}
 }
 
 @media (width <=1366px) {
 	.gold-background {
-		position: absolute;
 		z-index: -1;
-		height: 110%;
+
 		width: 100vw;
 		max-height: 110%;
 	}
@@ -122,9 +143,8 @@ body {
 
 @media (width <=1050px) {
 	.gold-background {
-		position: absolute;
 		z-index: -1;
-		height: 115%;
+
 		width: 100vw;
 		max-height: 115%;
 	}
