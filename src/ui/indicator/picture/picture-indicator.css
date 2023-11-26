@@ -1,14 +1,14 @@
 .picture-indicator-container {
-    /* left: 36.5%; */
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    align-items: center;
-    margin: 63px 0 30px 0px;
-    position: absolute;
-    width: 100vw;
-    align-items: center;
-    position: absolute;
+	/* left: 36.5%; */
+	display: flex;
+	/* flex-direction: row; */
+	justify-content: center;
+	align-items: center;
+	margin: 63px 0 30px 0px;
+	position: absolute;
+	width: 100vw;
+	align-items: center;
+	position: absolute;
 }
 
 .picture-indicator {
@@ -66,7 +66,7 @@
 
 @media(width <=1280px) {
 	.picture-indicator-container {
-		left: 32%;
+		left: -1%;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -78,9 +78,9 @@
 	.picture-indicator {
 		z-index: 10000;
 		display: block;
-		width: 7px;
-		height: 7px;
-		margin-left: 28px;
+		width: 4px;
+		height: 4px;
+		margin-left: 22px;
 		cursor: pointer;
 		border-radius: 50px;
 	}
