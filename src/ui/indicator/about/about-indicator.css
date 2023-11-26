@@ -10,6 +10,13 @@
   }
 }
 
+@media (width <=1536px) {
+  .about-view__indicator-container {
+    cursor: pointer;
+    margin: 14px 0 30px 0;
+  }
+}
+
 @media (width <=876px) {
   .about-view__indicator-container {
     cursor: pointer;
