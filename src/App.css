@@ -24,7 +24,7 @@ body {
 .main-background {
 	background-image: url("/src/assets/main-background.png");
 	width: calc((3500 * (100vh - 12.5vh)) / 1100);
-	height: 1110px; 
+	height: 1110px;
 	background-repeat: no-repeat;
 }
 
@@ -111,6 +111,23 @@ body {
 	.gold-background {
 		z-index: -1;
 
+		width: 100vw;
+	}
+}
+
+@media (width <=1536px) {
+	.gold-background {
+		position: absolute;
+		z-index: -1;
+		height: 123%;
+		width: 100vw;
+		max-height: 118%;
+	}
+
+	.picture-page-background {
+		position: absolute;
+		z-index: -1;
+		height: 144%;
 		width: 100vw;
 	}
 }
