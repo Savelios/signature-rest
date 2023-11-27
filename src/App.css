@@ -99,7 +99,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 2560px;
+	/* max-width: 2560px; */
 	/* height: 1110px; */
 	overflow-y: hidden;
 }

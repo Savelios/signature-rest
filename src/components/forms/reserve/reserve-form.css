@@ -64,6 +64,7 @@
 	height: 36px;
 	flex-shrink: 0;
 	margin: 6px 0 0 512px;
+	cursor: pointer;
 }
 
 .reserve-form__separator {
