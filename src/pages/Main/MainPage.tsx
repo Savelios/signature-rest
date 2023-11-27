@@ -76,7 +76,7 @@ export const MainPage: React.FC<ModalProps> = ({
   return (
     <div className='main__page'>
       {/* <img className='main-background-img' src={mainBackground} alt="" /> */}
-      {/* <div id="main-page__exposition_container">
+      <div id="main-page__exposition_container">
         <p id="main-page__exposition_container-name" onClick={() => navigate("/pictures")}>Экспозиция</p>
         <p id="main-page__exposition_container-content">C 23 марта у нас проходит выставка трех художников – @ivan_fedotov_art @oksanazarova, @pechenevskayalili</p>
       </div>
@@ -117,7 +117,7 @@ export const MainPage: React.FC<ModalProps> = ({
       <img id="main-page__contacts-line" src={contactsLine} alt="" />
 
       <div id="main-page__wine-container" onClick={() => navigate("/wine")}>Винная галерея</div>
-      <img id="main-page__wine-line" src={wineLine} alt="" /> */}
+      <img id="main-page__wine-line" src={wineLine} alt="" />
     </div>
   )
 }
