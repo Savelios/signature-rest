@@ -142,7 +142,6 @@ body {
 
 @media (width <=1536px) {
 	.gold-background {
-		position: absolute;
 		z-index: -1;
 		height: 123%;
 		width: 100vw;
@@ -150,9 +149,8 @@ body {
 	}
 
 	.picture-page-background {
-		position: absolute;
+
 		z-index: -1;
-		height: 144%;
 		width: 100vw;
 	}
 }
@@ -168,15 +166,15 @@ body {
 
 @media (width <=1280px) {
 	.gold-background {
-		position: absolute;
+
 		z-index: -1;
-		height: 119%;
+
 		width: 100vw;
 		max-height: 118%;
 	}
 
 	.picture-page-background {
-		position: absolute;
+
 		z-index: -1;
 		height: 142%;
 		width: 100vw;
@@ -192,26 +190,26 @@ body {
 	}
 
 	.picture-page-background {
-		position: absolute;
+
 		z-index: -1;
-		height: 140%;
+
 		width: 100vw;
 	}
 }
 
 @media (width <=876px) {
 	.gold-background {
-		position: absolute;
+
 		z-index: -1;
-		height: 115%;
+
 		width: 100vw;
 		max-height: 115%;
 	}
 
 	.picture-page-background {
-		position: absolute;
+
 		z-index: -1;
-		height: 162%;
+
 		width: 100vw;
 	}
 }
