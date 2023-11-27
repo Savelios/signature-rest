@@ -9,10 +9,10 @@
 
 .dish__list_items-container {
     display: flex;
-    overflow: scroll;
+    /* overflow: scroll; */
     overflow-y: hidden;
+    overflow-x: hidden;
     height: 77vh;
-    justify-content: center;
     align-items: center;
 }
 
