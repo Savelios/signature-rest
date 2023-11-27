@@ -73,10 +73,16 @@ body {
 }
 
 .picture-page-background {
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat;
 	background-size: cover;
 	z-index: -1;
-	height: 136%;
+	height: 136%; */
+
+	background-image: url("/src/assets/picture-page-background.png");
+	width: 100vw;
+    height: 1944px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .label-title {
@@ -122,7 +128,6 @@ body {
 
 	.picture-page-background {
 		z-index: -1;
-		height: 143%;
 		width: 100vw;
 	}
 }
