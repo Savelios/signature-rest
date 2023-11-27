@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .map-width {
@@ -24,7 +24,7 @@
     height: 793px;
     color: white;
     border-radius: 15px;
-    margin: 103px 0 137px 0;
+    margin: 50px 0 95px 0;
 }
 
 .contacts__address-text {
