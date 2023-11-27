@@ -29,26 +29,43 @@ body {
 }
 
 .gold-background {
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat;
 	background-size: cover;
 	z-index: -1;
 
-	width: 100vw;
+	width: 100vw; */
+
+
+
+	background-image: url("/src/assets/gold-background.png");
+	width: calc((3500 * (100vh - 12.5vh)) / 1100);
+	height: 1110px; 
+	background-repeat: no-repeat;
 }
 
 .primary-background {
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat;
 	background-size: cover;
 	z-index: -1;
-	width: 100vw;
+	width: 100vw; */
+
+	background-image: url("/src/assets/primary-background.png");
+	width: calc((3500 * (100vh - 12.5vh)) / 1100);
+	height: 1110px; 
+	background-repeat: no-repeat;
 }
 
 .wine-background {
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat;
 	background-size: cover;
 	z-index: -1;
 	width: 100vw;
-	height: 1110px;
+	height: 1110px; */
+
+	background-image: url("/src/assets/primary-background.png");
+	width: 100vw;
+	height: 1110px; 
+	background-repeat: no-repeat;
 }
 
 .picture-page-background {
