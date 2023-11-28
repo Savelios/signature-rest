@@ -28,8 +28,8 @@
 }
 
 .contacts__address-text {
-    color: var(--gray, #D5D7D2);
-    /* color: red; */
+    /* color: var(--gray, #D5D7D2); */
+    color: red;
     text-align: center;
     font-family: Futura New;
     font-size: 25px;
