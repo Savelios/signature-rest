@@ -13,7 +13,7 @@ const ContactsPage = () => {
 
   const mapWidthClass = 'map-width';
   const mapHeightClass = 'map-height';
-
+//test
   return (
     <div className='contacts__page'>
       <div className='contacts__map-container'>
