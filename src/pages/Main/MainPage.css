@@ -1,29 +1,20 @@
 .main__page {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    width: 100%;
-    height: calc(100vh - 0vh);
-    /* background-image: url("../../assets/main-background.png");
-    background-repeat: no-repeat; */
+    position: relative;
 }
 
 .main-background-img {height: 100vh}
 
 #main-page__exposition_container {
-    position: absolute;
+    position: relative;
     width: 405px;
     height: 190px;
     flex-shrink: 0;
     border-radius: 15px 15px 0px 15px;
     background: var(--White, #FFF);
-    top: 240px;
+    top: 95px;
     left: 50px;
 }
+
 
 #main-page__exposition_container-name {
     display: flex;
@@ -77,8 +68,8 @@
 }
 
 #main-page__exposition-line {
-    position: absolute;
-    top: 335px;
+    position: relative;
+    top: -20px;
     left: 455px;
 }
 
@@ -106,16 +97,15 @@
     letter-spacing: 1.3px;
     text-decoration-line: underline;
 
-    position: absolute;
-    bottom: 183px;
+    position: relative;
+    top: 435px;
     left: 228px;
 }
 
 #main-page__reserve-line {
-    position: absolute;
-    top: 292px;
-    left: 380px;
-    z-index: -1;
+    position: relative;
+    top: 280px;
+    left: 375px;
 }
 
 #main-page__menu_container {
@@ -124,9 +114,9 @@
     flex-shrink: 0;
     border-radius: 15px;
     background: var(--White, #FFF);
-    position: absolute;
-    left: 810px;
-    bottom: 105px;
+    position: relative;
+    left: 826px;
+    top: 45px;
 }
 
 #main-page__menu_container-name {
@@ -199,9 +189,9 @@
 }
 
 #main-page__menu-line {
-    position: absolute;
-    top: 598px;
-    left: 890px;
+    position: relative;
+    bottom: 413px;
+    left: 911px;
 }
 
 #main-page__guest-container {
@@ -213,10 +203,8 @@
     align-items: center;
     gap: 4px;
     flex-shrink: 0;
-
     border-radius: 15px 15px 0px 15px;
     background: var(--Gold, #91793A);
-
     color: var(--dark-white, #F6F6F6);
     text-align: center;
     font-family: Futura New;
@@ -224,19 +212,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 39px */
     letter-spacing: 1.3px;
     text-decoration-line: underline;
-
-    position: absolute;
-    top: 283px;
-    left: 1202px;
+    position: relative;
+    bottom: 761px;
+    left: 1264px;
 }
 
 #main-page__guest-line {
-    position: absolute;
-    top: 350px;
-    left: 1400px;
+    position: relative;
+    bottom: 765px;
+    left: 1430px;
 }
 
 #main-page__about_container {
@@ -245,18 +231,15 @@
     flex-shrink: 0;
     border-radius: 15px;
     background: linear-gradient(90deg, rgba(0, 32, 36, 0.00) 0%, #002024 100%);
-    background-image: url(../../assets/main-about-img.png);
+    background-image: url("../../assets//main-about-img.png");
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    position: absolute;
-    top: 735px;
-    left: 1770px;
-
-    z-index: -1;
+    position: relative;
+    bottom: 502px;
+    left: 1813px;
 }
 
 #main-page__about_container-name {
@@ -312,9 +295,9 @@
 }
 
 #main-page__contacts-container {
-    position: absolute;
-    top: 353px;
-    left: 2203.5px;
+    position: relative;
+    bottom: 1218px;
+    left: 2224.5px;
     display: flex;
     width: 405px;
     height: 70px;
@@ -332,22 +315,21 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 39px */
     letter-spacing: 1.3px;
     text-decoration-line: underline;
 }
 
 #main-page__contacts-line {
-    position: absolute;
-    top: 417.6px;
-    left: 2379px;
+    position: relative;
+    bottom: 1220px;
+    left: 2436px;
 }
 
-#main-page__wine-container {
-    position: absolute;
-    top: 478px;
-    left: 2828px;
 
+#main-page__wine-container {
+    position: relative;
+    bottom: 1258px;
+    left: 2892px;
     display: flex;
     width: 405px;
     height: 70px;
@@ -370,13 +352,10 @@
 }
 
 #main-page__wine-line {
-    position: absolute;
-    top: 412.8px;
-    left: 3025px;
+    position: relative;
+    bottom: 1396px;
+    left: 3077px;
+    width: 155.4px;
 }
 
-@media (width <=2560px) {
-    .main-background-img {
-        height: 100vh;
-    }
-}
+
