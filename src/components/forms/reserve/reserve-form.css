@@ -87,7 +87,7 @@
 	font-family: Futura New;
 	font-size: 12px;
 	font-style: normal;
-		font-weight: 700;
+	font-weight: 700;
 	line-height: normal;
 	letter-spacing: 1.2px;
 	text-transform: uppercase;
@@ -104,6 +104,7 @@
 	line-height: 100%;
 	border-bottom: 1px solid #91793A;
 	width: 100%;
+	padding-left: 40px;
 }
 
 .reserve__form_input-value:placeholder-shown {
@@ -121,7 +122,7 @@
 #reserve__date-id {
 	background: url("../../../assets/date-input-icon.png") no-repeat scroll 5px;
 	padding-left: 40px;
-	font-size: 18px;
+	font-size: 22px;
 }
 
 #reserve__guest-id {
@@ -186,3 +187,49 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 	line-height: normal;
 	padding: 0 132px 0 70px;
 }
+
+
+/* .datetimepicker {
+	display: inline-flex;
+	align-items: center;
+	background-color: transparent;
+	border-bottom: 1px solid #91793A;
+	font-size: 22px;
+	background: url("../../../assets/date-input-icon.png") no-repeat scroll 5px;
+
+	&:focus-within {
+		border-color: #91793A;
+	}
+
+	input {
+		font: inherit;
+		color: #A0AEAF;
+		appearance: none;
+		outline: none;
+		border: 0;
+		background-color: transparent;
+
+
+		&[type=date] {
+			width: 10rem;
+			padding: .25rem 0 .25rem .5rem;
+			border-right-width: 0;
+		}
+
+		&[type=time] {
+			width: 5.5rem;
+			padding: .25rem .5rem .25rem 0;
+			border-left-width: 0;
+		}
+	}
+}
+
+#date {
+	color: #A0AEAF;
+	margin-right: 10px;
+	margin-left: 42px;
+}
+
+#time {
+	color: #A0AEAF;
+} */
