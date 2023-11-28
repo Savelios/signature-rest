@@ -88,6 +88,16 @@
 	}
 }
 
+
+
+@media (width <=1518px) {
+	.indicators-container {
+		position: relative;
+		z-index: 1;
+
+	}
+}
+
 @media (width <=1367px) {
 
 	.indicator {
@@ -101,11 +111,16 @@
 	}
 }
 
-@media (width <=1518px) {
-	.indicators-container {
-		position: relative;
-		z-index: 1;
+@media (width <=1280px) {
 
+	.indicator {
+		position: relative;
+		top: 10px;
+		width: 22px;
+		height: 22px;
+		margin: 0 15px;
+		cursor: pointer;
+		border-radius: 50%;
 	}
 }
 
