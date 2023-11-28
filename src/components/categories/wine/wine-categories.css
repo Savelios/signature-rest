@@ -74,6 +74,7 @@
 	}
 }
 
+/* 1536x864 */
 @media (width <=1536px) {
 
 	.indicator {
@@ -81,6 +82,19 @@
 		top: 10px;
 		width: 25px;
 		height: 25px;
+		margin: 0 15px;
+		cursor: pointer;
+		border-radius: 50%;
+	}
+}
+
+@media (width <=1367px) {
+
+	.indicator {
+		position: relative;
+		top: 10px;
+		width: 22px;
+		height: 22px;
 		margin: 0 15px;
 		cursor: pointer;
 		border-radius: 50%;
