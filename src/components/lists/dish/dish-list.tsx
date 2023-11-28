@@ -11,17 +11,21 @@ import { DishCategories } from "../../categories/dish/dish-categories";
 import Loader from "../../../ui/loader/loader";
 
 export function DishList() {
+  const dishService = new DishService();
+
   const divRef = useRef<HTMLDivElement>(null);
 
   const [isScrolling, setIsScrolling] = useState(false);
 
   const [dish, setDish] = useState<DishData[]>([]);
 
+  const [dishes, setDishes] = useState<DishData[]>([]);
+
   const [category, setCategory] = useState<CategoryData[]>([]);
 
   const [selectedCategory, setSelectedCategory] = useState(0);
 
-  const dishService = new DishService();
+
 
   useEffect(() => {
     const fetchDishFromBackend = async () => {
@@ -29,13 +33,13 @@ export function DishList() {
         if (selectedCategory !== 0) {
           const result = await dishService.getByCategory(selectedCategory);
           console.log("Результат запроса блюд:", result);
-
           if (Array.isArray(result)) {
             setDish(result);
           } else {
             console.error("Результат не содержит массив блюд:", result);
           }
         }
+
       } catch (error) {
         console.error("Ошибка при получении блюд:", error);
       }
@@ -103,38 +107,47 @@ export function DishList() {
   };
 
   return (
-    <div className="dish__list_container">
-      <DishCategories
-        category={category}
-        onCategoryClick={handleCategoryChange}
-      />
-      <img
-        src={leftPlateImg}
-        alt=""
-        className="left-plate"
-        onClick={scrollLeft}
-      />
-      <div
-        id="dishes-list"
-        className="dish__list_items-container"
-        ref={divRef}
-        onScroll={() => setIsScrolling(true)}
-      >
-        {dish.map((dish) => (
-          <DishView
-            key={dish.id}
-            dish={dish}
-            isActive={false}
-            selectedCategory={selectedCategory}
-          />
-        ))}
+    <>
+
+      <div className="dish__list_container">
+        <DishCategories
+          category={category}
+          onCategoryClick={handleCategoryChange}
+        />
+        <img
+          src={leftPlateImg}
+          alt=""
+          className="left-plate"
+          onClick={scrollLeft}
+        />
+        <div
+          id="dishes-list"
+          className="dish__list_items-container"
+          ref={divRef}
+          onScroll={() => setIsScrolling(true)}
+        >
+          {dish.map((dish) => (
+            <>
+              {/* {dishes.length > 0 && ( */}
+                <DishView
+                  key={dish.id}
+                  dish={dish}
+                  isActive={false}
+                  selectedCategory={selectedCategory}
+                />
+              {/* )} */}
+            </>
+          ))}
+        </div>
+        <img
+          src={rightPlateImg}
+          alt=""
+          className="right-plate"
+          onClick={scrollRight}
+        />
       </div>
-      <img
-        src={rightPlateImg}
-        alt=""
-        className="right-plate"
-        onClick={scrollRight}
-      />
-    </div>
+      {/* {dish.length === 0 && <Loader />} */}
+      <div style={{ color: "white" }}>{dish.length}</div>
+    </>
   );
 }
