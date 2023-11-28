@@ -231,7 +231,7 @@
     flex-shrink: 0;
     border-radius: 15px;
     background: linear-gradient(90deg, rgba(0, 32, 36, 0.00) 0%, #002024 100%);
-    background-image: url(http://localhost:3000/static/media/main-about-img.6536688….png);
+    background-image: url("../../assets//main-about-img.png");
     z-index: 1;
     display: flex;
     flex-direction: column;
