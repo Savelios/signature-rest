@@ -6,13 +6,18 @@ import cardMetals from "../../../assets/card-metals.png"
 
 import './AboutView.css'
 
-const AboutView = () => {
+type AboutViewProps = {
+    onOpenModal: () => void;
+};
+export const AboutView: React.FC<AboutViewProps> = ({
+    onOpenModal,
+}) => {
     return (
         <div className='about-view__container'>
             <div className='about-view__card' id='about-view__first-card' style={{ backgroundImage: `url(${firstCard})` }}>
                 <h1>ОТ НАC<span>С ЛЮБОВЬЮ</span></h1>
                 <p>В каждом нашем блюде есть секретный ингредиент – любовь. Любовь к еде и к нашим клиентам.</p>
-                <button>Забронировать столик</button>
+                <button onClick={onOpenModal}>Забронировать столик</button>
             </div>
             <div className='about-view__card' id='about-view__second-card' style={{ backgroundImage: `url(${secondCard})` }}>
                 <h1>наша <span>нонцепция</span></h1>
@@ -27,5 +32,3 @@ const AboutView = () => {
         </div>
     )
 }
-
-export default AboutView
