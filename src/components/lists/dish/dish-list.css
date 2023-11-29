@@ -24,6 +24,7 @@
     flex-shrink: 0;
     top: 30vh;
     z-index: 1;
+    cursor: pointer;
 }
 
 .right-plate {
@@ -32,4 +33,5 @@
     height: 556px;
     flex-shrink: 0;
     top: 30vh;
+    cursor: pointer;
 }
