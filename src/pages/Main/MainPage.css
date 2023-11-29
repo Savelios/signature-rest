@@ -13,6 +13,8 @@
     background: var(--White, #FFF);
     top: 95px;
     left: 50px;
+    cursor: pointer;
+
 }
 
 
@@ -82,6 +84,7 @@
     align-items: center;
     gap: 4px;
     flex-shrink: 0;
+    cursor: pointer;
 
     border-radius: 0px 15px 15px 15px;
     background: var(--Gold, #91793A);
@@ -117,6 +120,7 @@
     position: relative;
     left: 826px;
     top: 45px;
+    cursor: pointer;
 }
 
 #main-page__menu_container-name {
@@ -217,6 +221,7 @@
     position: relative;
     bottom: 761px;
     left: 1264px;
+    cursor: pointer;
 }
 
 #main-page__guest-line {
