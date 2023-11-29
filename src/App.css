@@ -167,6 +167,14 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+
+	.main-background {
+		background-image: url(http://localhost:3000/static/media/main-background.1665bd3….png);
+		width: calc((3463 * (165vh - 47.5vh)) / 1078);
+		height: 860px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 @media (width <=1366px) {
