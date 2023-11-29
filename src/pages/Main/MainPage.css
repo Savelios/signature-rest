@@ -13,8 +13,6 @@
     background: var(--White, #FFF);
     top: 95px;
     left: 50px;
-    cursor: pointer;
-
 }
 
 
@@ -39,6 +37,7 @@
     /* 39px */
     letter-spacing: 1.3px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 #main-page__exposition_container-content {
@@ -120,7 +119,7 @@
     position: relative;
     left: 826px;
     top: 45px;
-    cursor: pointer;
+
 }
 
 #main-page__menu_container-name {
@@ -144,6 +143,7 @@
     /* 39px */
     letter-spacing: 1.3px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 #main-page__menu_container-content {
@@ -244,6 +244,7 @@
     position: relative;
     bottom: 502px;
     left: 1813px;
+
 }
 
 #main-page__about_container-name {
@@ -267,6 +268,7 @@
     /* 39px */
     letter-spacing: 1.3px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 #main-page__about_container-content {
@@ -321,6 +323,7 @@
     line-height: 150%;
     letter-spacing: 1.3px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 #main-page__contacts-line {
@@ -353,6 +356,7 @@
     line-height: 150%;
     letter-spacing: 1.3px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 #main-page__wine-line {
