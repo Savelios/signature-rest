@@ -1,0 +1,153 @@
+{
+    "dns": {
+        "independent_cache": true,
+        "rules": [
+            {
+                "query_type": [
+                    32,
+                    33
+                ],
+                "server": "dns-block"
+            },
+            {
+                "domain_suffix": ".lan",
+                "server": "dns-block"
+            }
+        ],
+        "servers": [
+            {
+                "address": "https://8.8.8.8/dns-query",
+                "address_resolver": "dns-local",
+                "detour": "proxy",
+                "strategy": "",
+                "tag": "dns-remote"
+            },
+            {
+                "address": "underlying://0.0.0.0",
+                "address_resolver": "dns-local",
+                "detour": "direct",
+                "strategy": "",
+                "tag": "dns-direct"
+            },
+            {
+                "address": "rcode://success",
+                "tag": "dns-block"
+            },
+            {
+                "address": "underlying://0.0.0.0",
+                "detour": "direct",
+                "tag": "dns-local"
+            }
+        ]
+    },
+    "inbounds": [
+        {
+            "domain_strategy": "",
+            "listen": "127.0.0.1",
+            "listen_port": 2080,
+            "sniff": true,
+            "sniff_override_destination": false,
+            "tag": "mixed-in",
+            "type": "mixed"
+        },
+        {
+            "auto_route": true,
+            "domain_strategy": "",
+            "endpoint_independent_nat": true,
+            "inet4_address": "172.19.0.1/28",
+            "interface_name": "nekoray-tun",
+            "mtu": 9000,
+            "sniff": true,
+            "sniff_override_destination": false,
+            "stack": "gvisor",
+            "strict_route": false,
+            "tag": "tun-in",
+            "type": "tun"
+        }
+    ],
+    "log": {
+        "level": "info"
+    },
+    "outbounds": [
+        {
+            "domain_strategy": "",
+            "flow": "",
+            "packet_encoding": "",
+            "server": "89.147.109.197",
+            "server_port": 23226,
+            "tag": "proxy",
+            "tls": {
+                "enabled": true,
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fU19d2jRcs7hlBt07MoFUjfFNyZsiNeoeGLg1DTdt38",
+                    "short_id": "f6af30e4"
+                },
+                "server_name": "youtube.com",
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                }
+            },
+            "type": "vless",
+            "uuid": "e9f57c95-a3e6-4ee7-adbc-4c16930f5792"
+        },
+        {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "bypass",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
+        }
+    ],
+    "route": {
+        "auto_detect_interface": true,
+        "final": "proxy",
+        "geoip": {
+            "path": "C:/Users/byzantium/Downloads/nekoray-3.24-2023-10-28-windows64/nekoray/geoip.db"
+        },
+        "geosite": {
+            "path": "C:/Users/byzantium/Downloads/nekoray-3.24-2023-10-28-windows64/nekoray/geosite.db"
+        },
+        "rules": [
+            {
+                "outbound": "dns-out",
+                "protocol": "dns"
+            },
+            {
+                "network": "udp",
+                "outbound": "block",
+                "port": [
+                    135,
+                    137,
+                    138,
+                    139,
+                    5353
+                ]
+            },
+            {
+                "ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ],
+                "outbound": "block"
+            },
+            {
+                "outbound": "block",
+                "source_ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ]
+            }
+        ]
+    }
+}
