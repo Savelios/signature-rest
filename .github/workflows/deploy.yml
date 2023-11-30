@@ -30,7 +30,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_PRIVATE_KEY }}
-          port: ${{ secrets.SERVER_PORT }}
+          port: 22
           script: |
             scp -r signature_app_${{ github.sha }}.zip ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/root/project/prod
 
@@ -55,7 +55,7 @@ jobs:
             host: ${{ secrets.SERVER_HOST }}
             username: ${{ secrets.SERVER_USERNAME }}
             key: ${{ secrets.SSH_PRIVATE_KEY }}
-            port: ${{ secrets.SERVER_PORT }}
+            port: 22
             script: |
               scp -r signature_app_${{ github.sha }}.zip ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/root/project/prod
 
