@@ -1,26 +1,18 @@
-name: Deploy
-
-on:
-  push:
-    branches:
-      - master
-
+name: Deploy Blog
+on: [push]
 jobs:
-  deploy:
+  deploy-blog:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      # Setup key
-      - run: set -eu
-      - run: mkdir "$HOME/.ssh"
-      - run: echo "${{ secrets.SERVER_PRIVATE_KEY }}" > "$HOME/.ssh/key"
-      - run: chmod 600 "$HOME/.ssh/key"
-      # Deploy
-      - name: Create directory on server
-        run: ssh -i "$HOME/.ssh/key" root@89.147.109.197 "mkdir -p /root/prod"
-      - name: Copy files to server
-        run: scp -i "$HOME/.ssh/key" code.tar.gz user@your_server_ip:/root/prod
-      - name: SSH into the server and extract files
-        run: ssh -i "$HOME/.ssh/key" root@89.147.109.197 "cd /root/prod && npm install"
-      - name: SSH into the server and run npm build
-        run: ssh -i "$HOME/.ssh/key" root@89.147.109.197 "cd /root/prod && npm run build"
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT }}
+          script_stop: true
+          script: |
+            cd /var/www/logicalmoon.com
+            git pull
+            ./build.sh
