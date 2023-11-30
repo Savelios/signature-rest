@@ -1,12 +1,12 @@
-name: Demo Workflow
-on: workflow_dispatch
+name: Test
+on: push
 jobs:
-  print:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Print to console
-        run: echo Hello GH Actions!
-      - name: Print a few lines
-        run: |
-          echo First line
-          echo Second Line
+      - name: Get repository code
+        uses: actions/checkout@v3
+      - name: Install deps
+        run: npm install
+      - name: Test app
+        run: npm run test
