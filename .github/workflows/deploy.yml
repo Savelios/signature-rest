@@ -18,7 +18,6 @@ jobs:
       # Deploy
       - run: |
           ssh -i "$HOME/.ssh/key" -o StrictHostKeyChecking=no root@89.147.109.197 "mkdir -p /root/prod"
-          scp -i "$HOME/.ssh/key" -o StrictHostKeyChecking=no -r . root@89.147.109.197:/root/prod
 
        
 
