@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({
     <div className='footer'>
       <img src={footerLogo} alt="" className='footer__logo' />
       <p className='footer__address-text'>Котельническая наб., 1/15, к.В, Москва <br />
-        +7 495 915 35 00</p>
+        <p>+7 495 915 35 00</p></p>
       <button className='footer__button' onClick={onOpenModal}>Забронировать столик</button>
     </div>
   )

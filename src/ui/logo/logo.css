@@ -19,3 +19,10 @@
 		width: 435px;
 	}
 }
+
+
+@media (width <= 715px) {
+	.header-logo {
+		width: 317px;
+	}
+}

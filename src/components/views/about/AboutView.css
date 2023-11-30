@@ -103,7 +103,7 @@
     font-family: Futura New;
     font-size: 45px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 110%;
     letter-spacing: 2.25px;
     text-transform: uppercase;
@@ -1167,5 +1167,60 @@
         justify-content: center;
         padding-bottom: 97px;
         gap: 35px;
+    }
+}
+
+@media (width <=715px) {
+    .about-view__container {
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .about-view__card {
+        width: 382px;
+        height: 833px;
+    }
+
+    #about-view__first-card>h1 {
+        font-size: 45px;
+        padding-top: 0;
+    }
+
+    #about-view__first-card>h1>span {
+        font-size: 45px;
+    }
+
+    #about-view__first-card>p {
+        font-size: 22px;
+        padding: 135px 20px 20px 20px;
+    }
+
+    #about-view__first-card>button {
+        font-size: 25px;
+        width: 356px;
+        height: 54px;
+        margin: 60px 22.5px 265px 22.5px;
+    }
+
+    #about-view__second-card>p {
+        font-size: 22px;
+        padding-top: 30px;
+    }
+
+    #about-view__second-card>h1 {
+        font-size: 45px;
+    }
+
+    #about-view__second-card>h1>span {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    #about-view__third-card>h1 {
+        font-size: 45px;
+    }
+
+    #about-view__third-card>h1>span {
+        font-size: 45px;
     }
 }
