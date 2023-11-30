@@ -22,4 +22,3 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           script: |
             ssh -o StrictHostKeyChecking=no -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "mkdir -p /root/project"
-            scp -r ./build/ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/root/project
