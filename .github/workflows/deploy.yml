@@ -5,12 +5,6 @@ on:
     branches:
       - master
 
-env:
-  SERVER_HOST: 89.147.109.197
-  SERVER_USER: root
-  SERVER_PATH: /test
-  SERVER_PORT: 3696
-
 jobs:
 
   deploy:
@@ -19,7 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Install ssh key
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2.3.1
         with:
@@ -27,7 +20,6 @@ jobs:
           known_hosts: "just-a-placeholder-so-we-dont-get-errors"
           
       - name: Generate auth hosts
-        run: ssh-keyscan -H ${{ env.SERVER_HOST }} >> ~/.ssh/known_hosts
+        run: ssh-keyscan -H -p 3696 89.147.109.197 >> ~/.ssh/known_hosts
 
-      # Deploy
-      - run: rsync --archive --compress --progress . -p ${{ env.SERVER_PORT }} ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }}:${{ env.SERVER_PATH }}
+      - run: rsync --archive --compress --progress . -p 3696 root@89.147.109.197:/test
