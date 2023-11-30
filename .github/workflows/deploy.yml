@@ -6,20 +6,14 @@ on:
       - master
 
 jobs:
-
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2.3.1
-        with:
-          key: "${{ secrets.SERVER_PRIVATE_KEY }}"
-          known_hosts: "just-a-placeholder-so-we-dont-get-errors"
-          
-      - name: Generate auth hosts
-        run: ssh-keyscan -T 60 -H -p 3696 89.147.109.197 >> ~/.ssh/known_hosts
-
-      - run: rsync --archive --compress --progress . -p 3696 root@89.147.109.197:/test
+      - uses: actions/checkout@v2
+      # Setup key
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{ secrets.SERVER_PRIVATE_KEY }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
+      # Deploy
+      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . root@89.147.109.197:/test
