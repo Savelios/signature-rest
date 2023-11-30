@@ -1,12 +1,25 @@
-name: Test
-on: push
+name: Build
+on: [push]
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Get repository code
+      - name: Get project code
         uses: actions/checkout@v3
-      - name: Install deps
-        run: npm install
-      - name: Test app
-        run: npm run test
+      - name: Install Deps
+        run: npm ci
+      - name: Build project
+        run: npm run build
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-files
+          path: build
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-files
