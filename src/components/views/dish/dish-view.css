@@ -1,3 +1,9 @@
+p,
+h1,
+label {
+    cursor: default;
+}
+
 .main__dish-view_container {
     position: relative;
     display: flex;
@@ -35,6 +41,7 @@
     line-height: 150%;
     letter-spacing: 1.3px;
     text-transform: uppercase;
+
 }
 
 
@@ -202,6 +209,7 @@
     /* 67.5px */
     letter-spacing: 2.25px;
     text-transform: uppercase;
+
 }
 
 .dish-view__ingredients-title {
@@ -280,4 +288,14 @@
     line-height: 100%;
     /* 22px */
     text-decoration-line: underline;
+}
+
+@media (width <=2560px) {
+    .main__dish-view_container {
+        top: 5vh;
+    }
+
+    .dish-view__dish-plate_container {
+        padding: 4vh 3vw 0 3vw;
+    }
 }

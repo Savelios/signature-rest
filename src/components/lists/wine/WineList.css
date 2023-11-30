@@ -5,3 +5,9 @@
     justify-content: center;
 }
 
+@media (width <= 2560px) {
+    .wine-list__container {
+        justify-content: unset;
+        padding-left: 250px;
+    }
+}
