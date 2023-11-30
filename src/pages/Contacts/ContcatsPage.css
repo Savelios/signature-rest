@@ -28,8 +28,7 @@
 }
 
 .contacts__address-text {
-    /* color: var(--gray, #D5D7D2); */
-    color:  #0d00ff;
+    color: var(--gray, #D5D7D2);
     text-align: center;
     font-family: Futura New;
     font-size: 25px;

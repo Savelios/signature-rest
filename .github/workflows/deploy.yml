@@ -22,8 +22,8 @@ jobs:
            npm run build
            cd
            
-      - name: Print Happy Message for CD finish
-        run: echo "CD Pipeline part Finished successfully!"
+      - name: Happy Message for CI finish
+        run: echo "CI Pipeline part Finished successfully!"
 
   cd_part:
     runs-on: ubuntu-latest
