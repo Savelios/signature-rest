@@ -1,23 +1,25 @@
-name: Deploy
+name: Node.js Deploy
 
 on:
   push:
     branches:
-      - master
+      - master  # Можете изменить ветку, при которой будет запускаться деплой
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Выберите нужную вам ОС для выполнения действий
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SERVER_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
-      - name: Deploy via rsync and execute commands
-        run: |
-          ssh -tt ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} << 'EOF'
-            mkdir testprod
-          EOF
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_PRIVATE_KEY }}
+          port: ${{ secrets.SERVER_PORT }}
+          script: |
+            ssh -o StrictHostKeyChecking=no -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "mkdir -p /root/project"
+            scp -r ./build/ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/root/project
