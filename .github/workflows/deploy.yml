@@ -1,26 +1,19 @@
-name: Node.js Deploy
+name: Deploy
 
 on:
   push:
-    branches:
-      - master 
+    branches: [ master ]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest  
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Deploy to Server
+      - name: executing remote ssh commands
         uses: appleboy/ssh-action@master
         with:
+          script_stop: true
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SERVER_PRIVATE_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          script: |
-            ssh -o StrictHostKeyChecking=no -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "mkdir -p /root/project"
-            scp -r ./build/ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/path/to/deployment/directory
+          script: whoami
