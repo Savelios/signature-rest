@@ -1,4 +1,4 @@
-name: CI-CD-Pipeline-via-SSH
+name: Deploy
 
 on:
   push:
@@ -6,27 +6,14 @@ on:
       - master
 
 jobs:
-  ci_part:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Git clone our repo
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@v2
+      # Setup key
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
       - run: echo "${{ secrets.SERVER_PRIVATE_KEY }}" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
-
-      - name: Create ZIP deployment package
-        run: zip -r signature_app_${{ github.sha }}.zip ./ -x *.git*
-
-      - name: Print Happy Message for CI finish
-        run: echo "Commit Pipeline part Finished successfully!"
-
-      - name: Build Deployment on Server via SSH
-      - run: |
-          scp -i ${{ secrets.SSH_PRIVATE_KEY }} -P ${{ secrets.SERVER_PORT }} signature_app_${{ github.sha }}.zip ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/root/project/prod
-          
-      - name: Print Message for CD finish
-        run: echo "Push Pipeline part Finished successfully!"
+      # Deploy
+      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" root@89.147.109.197 "mkdir /root/project"
