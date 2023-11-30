@@ -18,7 +18,6 @@ jobs:
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
       - name: Deploy via rsync and execute commands
         run: |
-          rsync -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" --archive --compress --delete . root@${{ secrets.SERVER_HOST }}:/test
           ssh -tt ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} << 'EOF'
             mkdir testprod
           EOF
