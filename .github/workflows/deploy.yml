@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # Archive files
-      - name: Archive files
-        run: |
-          tar -czf code.tar.gz .
       # Setup key
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
@@ -25,6 +21,6 @@ jobs:
       - name: Copy files to server
         run: scp -i "$HOME/.ssh/key" code.tar.gz user@your_server_ip:/root/prod
       - name: SSH into the server and extract files
-        run: ssh -i "$HOME/.ssh/key" root@89.147.109.197 "cd /root/prod && tar -xzf code.tar.gz && npm install"
+        run: ssh -i "$HOME/.ssh/key" root@89.147.109.197 "cd /root/prod && npm install"
       - name: SSH into the server and run npm build
         run: ssh -i "$HOME/.ssh/key" root@89.147.109.197 "cd /root/prod && npm run build"
