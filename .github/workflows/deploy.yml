@@ -6,12 +6,17 @@ on:
       - master
 
 jobs:
-  commit_changes:
+  ci_part:
     runs-on: ubuntu-latest
 
     steps:
       - name: Git clone our repo
         uses: actions/checkout@v3
+
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{ secrets.SERVER_PRIVATE_KEY }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
 
       - name: Create ZIP deployment package
         run: zip -r signature_app_${{ github.sha }}.zip ./ -x *.git*
@@ -19,11 +24,6 @@ jobs:
       - name: Print Happy Message for CI finish
         run: echo "Commit Pipeline part Finished successfully!"
 
-  push_code_to_server:
-    runs-on: ubuntu-latest
-    needs: [commit_changes]
-
-    steps:
       - name: Build Deployment on Server via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -44,9 +44,9 @@ jobs:
       - name: Print Message for CD finish
         run: echo "Push Pipeline part Finished successfully!"
 
-  build_on_prod:
+  cd_part:
       runs-on: ubuntu-latest
-      needs: [push_code_to_server]
+      needs: [ci_part]
 
       steps:
         - name: Copy build package to var/www via SSH
