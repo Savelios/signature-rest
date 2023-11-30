@@ -20,6 +20,6 @@ jobs:
           known_hosts: "just-a-placeholder-so-we-dont-get-errors"
           
       - name: Generate auth hosts
-        run: ssh-keyscan -H -p 3696 89.147.109.197 >> ~/.ssh/known_hosts
+        run: ssh-keyscan -T 60 -H -p 3696 89.147.109.197 >> ~/.ssh/known_hosts
 
       - run: rsync --archive --compress --progress . -p 3696 root@89.147.109.197:/test
