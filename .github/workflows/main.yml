@@ -1,30 +1,12 @@
-name: Deploy
-
-# Controls when the action will run. 
-on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+name: Demo Workflow
+on: workflow_dispatch
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  print:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:       
-    - name: Deploy using ssh
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.SERVER_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: ${{ secrets.SERVER_PORT }}
-        script: |
-          cd /signature-rest
-          git pull https://github.com/id000000369/signature-rest.git
-
-    - name: Print Happy Message for CD finish
-      run: echo "CD Pipeline part Finished successfully!"
+    steps:
+      - name: Print to console
+        run: echo Hello GH Actions!
+      - name: Print a few lines
+        run: |
+          echo First line
+          echo Second Line
