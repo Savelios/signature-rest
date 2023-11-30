@@ -3,11 +3,11 @@ name: Node.js Deploy
 on:
   push:
     branches:
-      - main  # Можете изменить ветку, при которой будет запускаться деплой
+      - main 
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Выберите нужную вам ОС для выполнения действий
+    runs-on: ubuntu-latest  
 
     steps:
       - name: Checkout Repository
