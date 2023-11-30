@@ -17,7 +17,7 @@ jobs:
           key: ${{ secrets.SERVER_PRIVATE_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-           cd /signature-rest
+           cd signature-rest
            git pull https://github.com/id000000369/signature-rest.git
       - name: Print Happy Message for CD finish
         run: echo "CD Pipeline part Finished successfully!"
