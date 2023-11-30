@@ -1,25 +1,19 @@
-name: Build
-on: [push]
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get project code
-        uses: actions/checkout@v3
-      - name: Install Deps
-        run: npm ci
-      - name: Build project
-        run: npm run build
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-files
-          path: build
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Get build artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: build-files
+      - uses: actions/checkout@v2
+      # Setup key
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{ secrets.SSH_PRIVATE_KEY }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
+      # Deploy
+      - run: rsync -avz -e "ssh -p ${{ secrets.SERVER_PORT }}" ./dist/ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/test
