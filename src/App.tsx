@@ -88,6 +88,12 @@ function App() {
       footer[0].setAttribute("style", "display:flex;  height:unset; ");
     }
 
+    if (location.pathname === "/wine-gallery" && windowSize.current[0] <= 715) {
+      footer[0].setAttribute("style", "display:none;");
+    } else {
+      footer[0].setAttribute("style", "display:flex;  height:unset; ");
+    }
+
   }, [location]);
 
   return (

@@ -1174,6 +1174,7 @@
     .about-view__container {
         flex-direction: column;
         overflow: auto;
+        padding-bottom: 0px;
     }
 
     .about-view__card {
