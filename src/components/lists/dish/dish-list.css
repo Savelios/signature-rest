@@ -35,3 +35,18 @@
     top: 30vh;
     cursor: pointer;
 }
+
+#plate {
+    display: block;
+}
+
+@media (width <=715px) {
+    #plate {
+        display: none;
+    }
+
+    .dish__list_items-container {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+}

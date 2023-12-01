@@ -118,6 +118,7 @@ export function DishList() {
           src={leftPlateImg}
           alt=""
           className="left-plate"
+          id="plate"
           onClick={scrollLeft}
         />
         <div
@@ -143,6 +144,7 @@ export function DishList() {
           src={rightPlateImg}
           alt=""
           className="right-plate"
+          id="plate"
           onClick={scrollRight}
         />
       </div>

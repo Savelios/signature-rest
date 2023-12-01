@@ -299,3 +299,7 @@ label {
         padding: 4vh 3vw 0 3vw;
     }
 }
+
+@media (width <=715px) {
+
+}
