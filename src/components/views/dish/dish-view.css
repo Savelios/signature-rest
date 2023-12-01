@@ -299,3 +299,295 @@ label {
         padding: 4vh 3vw 0 3vw;
     }
 }
+
+/* 1536x864 */
+@media (width <=1536px) {
+    .main__dish-view_container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 26vh;
+        min-width: 100vw;
+        border-radius: 20px;
+    }
+
+    .dish-view__pecularity-container {
+        width: 405px;
+        height: 434px;
+        opacity: 0.66;
+        border-radius: 15px;
+        background: #002024;
+        border-radius: 15px;
+
+    }
+
+    .pecularity__name {
+        display: flex;
+        width: 405px;
+        height: 70px;
+        padding: 8px 16px;
+        justify-content: left;
+        align-items: center;
+        gap: 4px;
+        border-radius: 15px;
+        background: var(--White, #FFF);
+        color: var(--Gold, #91793A);
+        font-family: Futura New;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+
+    }
+
+
+
+    .label-title-value {
+        padding-top: 9px;
+        color: #A0AEAF;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+        border-bottom: 1px solid #91793A;
+        height: 35px;
+    }
+
+    .pecularity__calories_container {
+        width: 405px;
+        padding: 40px 0 20px 40px;
+    }
+
+    .calories__value {
+        width: 100%;
+        height: 35px;
+        flex-shrink: 0;
+        color: #A0AEAF;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+        padding-top: 8.7px;
+        border-bottom: 1px solid #91793A;
+    }
+
+    .pecularity__fats_container {
+        display: flex;
+        width: 365px;
+        align-items: flex-start;
+        gap: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+
+    .protein-value {}
+
+    .fat-value {}
+
+    .carbohydrates-value {}
+
+
+    .alergic-reaction_title {
+        color: var(--Gray, #A0AEAF);
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        /* 22.5px */
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        padding-left: 32px;
+    }
+
+    .alergic-reaction_list {
+        flex-direction: column;
+        display: flex;
+        width: 405px;
+        padding: 40px 0 40px 40px;
+        gap: 20px;
+    }
+
+    .alergic-reaction-type {
+        color: #FFF;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+        border-bottom: 1px solid #91793A;
+    }
+
+    .dish-view__dish-name {
+        color: #FFF;
+        text-align: center;
+        font-family: Futura New;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%;
+        /* 54px */
+        letter-spacing: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dish-view__dish-name-container {
+        position: absolute;
+        top: -80px;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .dish-view__dish-plate_container {
+        display: grid;
+        padding: 0px 3vw;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .dish-view__dish-img {
+        width: 385px;
+        height: 417px;
+    }
+
+    .dish-view__ingredients-container {
+        display: inline-flex;
+        height: 732px;
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-shrink: 0;
+        opacity: 0.66;
+        border-radius: 15px;
+        background: #002024;
+    }
+
+    .dish-view__price-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .dish-view__basket-img {
+        display: flex;
+
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border-radius: 15px;
+        background: var(--Gold, #91793A);
+    }
+
+    .dish-view__price-title {
+        display: flex;
+        width: 325px;
+        height: 70px;
+        padding: 8px 16px;
+        justify-content: left;
+        align-items: center;
+        gap: 4px;
+        border-radius: 15px;
+        background: var(--Gold, #91793A);
+        color: var(--dark-white, #F6F6F6);
+        font-family: Futura New;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 67.5px */
+        letter-spacing: 2.25px;
+        text-transform: uppercase;
+
+    }
+
+    .dish-view__ingredients-title {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        padding: 8px 16px;
+        justify-content: left;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: var(--White, #FFF);
+        color: var(--Gold, #91793A);
+        font-family: Futura New;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 39px */
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+    }
+
+    .dish-view__ingredients_list {
+        display: flex;
+        width: 100%;
+        padding: 0px 0 0px 15px;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dish-view__ingredient-type {
+        width: 100%;
+        height: 24px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+        border-bottom: 1px solid #91793A;
+    }
+
+    .dish-view__recomendation-title {
+        color: var(--Gray, #A0AEAF);
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        /* 22.5px */
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        padding-left: 32.5px;
+    }
+
+    .dish-view__recomendation_list {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-shrink: 0;
+        display: flex;
+        padding: 0px 9px;
+    }
+
+    .dish-view__recomendation-type {
+        color: #FFF;
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+        /* 22px */
+        text-decoration-line: underline;
+    }
+}

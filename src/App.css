@@ -179,6 +179,14 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+
+	.primary-background {
+		background-image: url(http://localhost:3000/static/media/primary-background.67b3eb7….png);
+		width: calc((3500 * (100vh - 12.5vh)) / 1716);
+		height: 896px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 @media (width <=1366px) {

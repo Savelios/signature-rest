@@ -35,3 +35,26 @@
     top: 30vh;
     cursor: pointer;
 }
+
+
+
+@media(width <=1536px) {
+    .left-plate {
+        position: absolute;
+        height: 400px;
+        flex-shrink: 0;
+        top: 43vh;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .right-plate {
+        right: 0;
+        position: absolute;
+        height: 400px;
+        flex-shrink: 0;
+        top: 43vh;
+        cursor: pointer;
+    }
+
+}
