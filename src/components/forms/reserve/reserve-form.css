@@ -246,7 +246,8 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 		height: 100%;
 		border-radius: 0px;
 		padding: 0 20px;
-		overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: scroll;
 	}
 
 	.reserve__form-button {
