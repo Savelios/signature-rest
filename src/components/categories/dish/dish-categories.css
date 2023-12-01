@@ -38,3 +38,20 @@
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+
+
+
+@media(width <=1367px) {
+
+  .dish-categories__container {
+    position: absolute;
+    z-index: 0;
+    top: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: #a0aeaf;
+    background-color: rgb(0 255 13 / 0%);
+  }
+}
