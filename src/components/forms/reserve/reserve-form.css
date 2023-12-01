@@ -314,7 +314,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 	.reserve__form-button {
 		width: 345px;
 		height: 65px;
-		margin: 50px 4px 30px 4px;
+		margin: 50px 0px 30px 0px;
 	}
 
 	.reserve__form_reminder-container>p {
