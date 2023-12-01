@@ -3,6 +3,11 @@
 }
 
 
+
+.about-view__bottom-btn {
+    display: none;
+}
+
 @media (width <=715px) {
     .about-page__title {
         display: block;
@@ -28,5 +33,29 @@
         text-underline-offset: 30px;
 
         margin-bottom: 30px;
+    }
+
+    .about-view__bottom-btn {
+        display: block;
+
+        width: 382px;
+        height: 80px;
+        flex-shrink: 0;
+
+        border-radius: 15px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(20px);
+
+        color: #F6F6F6;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        font-family: Futura New;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 1.3px;
+        text-decoration-line: underline;
     }
 }
