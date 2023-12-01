@@ -56,6 +56,13 @@
     display: none;
 }
 
+.footer_top_container {
+    display: none;
+}
+
+.footer_bottom_container {
+    display: none;
+}
 
 @media (width <=715px) {
     .footer {
