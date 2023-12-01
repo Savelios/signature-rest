@@ -22,6 +22,8 @@
     line-height: 30px;
 }
 
+
+
 .footer__button {
     display: flex;
     width: 395px;
@@ -44,4 +46,23 @@
     line-height: 150%;
     letter-spacing: 1.25px;
     background-color: #002024;
+}
+
+
+@media (width <= 715px) {
+    .footer__button  {
+        display: none;
+    }
+
+    .footer__address-text>p {
+        display: none;
+    }
+
+    .footer__address-text {
+        padding: unset;
+    }
+
+    .footer__logo {
+        display: none;
+    }
 }

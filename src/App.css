@@ -22,7 +22,7 @@ body {
 }
 
 .main-background {
-	background-image: url("/src/assets/main-background.png");
+	/* background-image: url("/src/assets/main-background.png"); */
 	width: calc((3500 * (100vh - 12.5vh)) / 1100);
 	height: 1110px;
 	background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body {
 
 
 
-	background-image: url("/src/assets/gold-background.png");
+	/* background-image: url("/src/assets/gold-background.png"); */
 	width: calc((3500 * (100vh - 12.5vh)) / 1100);
 	height: 1110px;
 	background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body {
 	z-index: -1;
 	width: 100vw; */
 
-	background-image: url("/src/assets/primary-background.png");
+	/* background-image: url("/src/assets/primary-background.png"); */
 	width: calc((3500 * (100vh - 12.5vh)) / 1100);
 	height: 1110px;
 	background-repeat: no-repeat;
@@ -65,7 +65,7 @@ body {
 	width: 100vw;
 	height: 1110px; */
 
-	background-image: url("/src/assets/primary-background.png");
+	/* background-image: url("/src/assets/primary-background.png"); */
 	width: 100vw;
 	height: 1110px;
 	background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body {
 	z-index: -1;
 	height: 136%; */
 
-	background-image: url("/src/assets/picture-page-background.png");
+	/* background-image: url("/src/assets/picture-page-background.png"); */
 	width: 100vw;
 	height: 1944px;
 	background-repeat: no-repeat;
@@ -281,5 +281,11 @@ body {
 		z-index: -1;
 
 		width: 100vw;
+	}
+}
+
+@media (width <= 715px) {
+	.gold-background {
+		height: 100%;
 	}
 }
