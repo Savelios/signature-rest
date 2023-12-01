@@ -36,17 +36,27 @@
     cursor: pointer;
 }
 
-#plate {
-    display: block;
-}
 
-@media (width <=715px) {
-    #plate {
-        display: none;
+
+
+@media(width <=1536px) {
+    .left-plate {
+        position: absolute;
+        height: 400px;
+        flex-shrink: 0;
+        top: 43vh;
+        z-index: 1;
+        cursor: pointer;
     }
 
-    .dish__list_items-container {
-        flex-direction: column;
-        overflow-y: scroll;
+    .right-plate {
+        right: 0;
+        position: absolute;
+        height: 400px;
+        flex-shrink: 0;
+        top: 43vh;
+        cursor: pointer;
     }
+
+
 }
