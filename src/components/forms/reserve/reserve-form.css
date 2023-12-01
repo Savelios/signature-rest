@@ -309,3 +309,20 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 		margin-left: 0px
 	}
 }
+
+@media (width <=390px) {
+	.reserve__form-button {
+		width: 345px;
+		height: 65px;
+		margin: 50px 4px 30px 4px;
+	}
+
+	.reserve__form_reminder-container>p {
+		padding-right: 10px;
+		font-size: 21px;
+	}
+
+	.reserve__form_reminder-text {
+		padding: 5px 10px;
+	}
+}
