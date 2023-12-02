@@ -653,12 +653,12 @@ label {
 
         .dish__list_items-container {
             display: flex;
-            overflow: unset;
-            overflow-y: unset;
-            overflow-x: unset;
+            overflow: scroll;
+            /* overflow-y: scroll; */
+            /* overflow-x: scroll; */
             height: unset;
             align-items: unset;
-            flex-direction: column;
+            flex-direction: row;
         }
 
         .main__dish-view_container {
