@@ -290,6 +290,10 @@ label {
     text-decoration-line: underline;
 }
 
+.dish-view__mobile_container {
+    display: none;
+}
+
 @media (width <=2560px) {
     .main__dish-view_container {
         top: 5vh;
@@ -589,5 +593,179 @@ label {
         line-height: 100%;
         /* 22px */
         text-decoration-line: underline;
+    }
+}
+
+
+
+@media (width <=715px) {
+    .dish-view__pecularity-container {
+        display: none;
+    }
+
+
+    .dish-view__ingredients-container {
+        display: none;
+    }
+
+    .dish-view__mobile_container {
+        display: block;
+
+        width: 382px;
+        height: 880px;
+        flex-shrink: 0;
+
+        border-radius: 15px;
+        opacity: 0.66;
+        background: #002024;
+
+        padding: 0 25px;
+    }
+
+    .dish__list_container {
+        display: unset;
+        flex-direction: unset;
+        overflow: unset;
+        justify-content: unset;
+        align-items: unset;
+        height: unset;
+        width: unset;
+    }
+
+    .dish__list_items-container {
+        display: flex;
+        overflow: unset;
+        overflow-y: unset;
+        overflow-x: unset;
+        height: unset;
+        align-items: unset;
+        flex-direction: column;
+    }
+
+    .main__dish-view_container {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: unset;
+        min-width: unset;
+        border-radius: unset;
+        overflow-y: unset;
+        padding: 0 0 55px 0;
+    }
+
+    .dish-view__dish-name-container {
+        position: unset;
+    }
+
+    .pecularity__name {
+        display: flex;
+        width: 334px;
+        height: 54px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--Gold, #91793A);
+        font-family: Futura New;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        /* 39px */
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        background-color: unset;
+    }
+
+    .pecularity__calories_container {
+        width: 100%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pecularity__calories_container {
+        padding: 10px 0 10px 0px;
+    }
+
+    .pecularity__fats_container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .dish-view__ingredients-title {
+        padding: 29px 0 12px 0;
+        background-color: unset;
+        width: 330px;
+        font-weight: 700;
+        gap: unset;
+    }
+
+    .dish-view__ingredients_list {
+        padding: 0;
+        gap: 20px;
+    }
+
+    .dish-view__recomendation-title {
+        padding: 0 0 40px 0;
+        color: var(--Gray, #A0AEAF);
+        font-family: Futura New;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        /* 22.5px */
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+    }
+
+    .dish-view__recomendation_list {
+        padding: 0;
+        gap: 20px;
+    }
+
+    .pecularity__name {
+        align-items: unset;
+        padding: 0;
+
+    }
+
+    .dish-view__price-container {
+        padding: 38px 0 54px 0px;
+    }
+
+    .dish-view__dish-name {
+        width: 382px;
+        height: 177px;
+        flex-shrink: 0;
+    }
+
+    .dish-view__recomendation-type {
+        width: 362px;
+        height: 24px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Futura New;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+        /* 22px */
+        text-decoration-line: underline;
+    }
+
+    .label-title {
+        padding-top: 19px;
+    }
+
+    .label-title-value {
+        font-size: 22px;
+        padding: 9px 0 6px 0px;
+    }
+
+    .dish-view__ingredient-type {
+        font-size: 22px;
+        height: 32px;
     }
 }

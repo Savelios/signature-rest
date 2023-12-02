@@ -149,7 +149,7 @@ export function DishList() {
         />
       </div>
       {/* {dish.length === 0 && <Loader />} */}
-      <div style={{ color: "white" }}>{dish.length}</div>
+      {/* <div style={{ color: "white" }}>{dish.length}</div> */}
     </>
   );
 }

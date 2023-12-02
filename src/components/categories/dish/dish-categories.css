@@ -38,3 +38,10 @@
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+
+
+@media (width <=715px) {
+  .dish-categories__container {
+    display: none;
+  }
+}
