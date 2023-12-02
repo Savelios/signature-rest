@@ -13,7 +13,9 @@ interface DishViewProps {
 export function DishView(props: DishViewProps) {
   const { dish, isActive, selectedCategory } = props;
 
-  const dishViewClass = isActive ? "dish-view active" : "main__dish-view_container";
+  const dishViewClass = isActive
+    ? "dish-view active"
+    : "main__dish-view_container";
 
   return (
     <div id={String(selectedCategory)} className={dishViewClass}>
@@ -25,14 +27,23 @@ export function DishView(props: DishViewProps) {
             <p className="calories__value">300 Ккал / 100 г.</p>
           </div>
           <div className="pecularity__fats_container">
-            <label className="label-title">белки
-              <p className="label-title-value" id="protein-value">12% 120г.</p>
+            <label className="label-title">
+              белки
+              <p className="label-title-value" id="protein-value">
+                12% 120г.
+              </p>
             </label>
-            <label className="label-title">жиры
-              <p className="label-title-value" id="fat-value">12% 8г.</p>
+            <label className="label-title">
+              жиры
+              <p className="label-title-value" id="fat-value">
+                12% 8г.
+              </p>
             </label>
-            <label className="label-title">углеводы
-              <p className="label-title-value" id="carbohydrates-value">12% 8г.</p>
+            <label className="label-title">
+              углеводы
+              <p className="label-title-value" id="carbohydrates-value">
+                12% 8г.
+              </p>
             </label>
           </div>
           <p className="alergic-reaction_title">аллергические реакции </p>
@@ -60,11 +71,72 @@ export function DishView(props: DishViewProps) {
             <p className="dish-view__ingredient-type">Sousus</p>
             <p className="dish-view__ingredient-type">Chesnokus</p>
           </div>
-          <p className="dish-view__recomendation-title">вкус лучше всего раскроется с</p>
+          <p className="dish-view__recomendation-title">
+            вкус лучше всего раскроется с
+          </p>
           <div className="dish-view__recomendation_list">
-            <p className="dish-view__recomendation-type">Поль Роже Брют Резерв</p>
-            <p className="dish-view__recomendation-type">Бласон Руж" Креман Брют</p>
-            <p className="dish-view__recomendation-type">Лансон Блэк Лейбл Брют</p>
+            <p className="dish-view__recomendation-type">
+              Поль Роже Брют Резерв
+            </p>
+            <p className="dish-view__recomendation-type">
+              Бласон Руж" Креман Брют
+            </p>
+            <p className="dish-view__recomendation-type">
+              Лансон Блэк Лейбл Брют
+            </p>
+          </div>
+        </div>
+
+        <div className="dish-view__mobile_container">
+          <p className="pecularity__name">особенности</p>
+          <div className="pecularity__calories_container">
+            <label className="label-title">калорийность</label>
+            <p className="calories__value">300 Ккал / 100 г.</p>
+          </div>
+          <div className="pecularity__fats_container">
+            <label className="label-title">
+              белки
+              <p className="label-title-value" id="protein-value">
+                12% 120г.
+              </p>
+            </label>
+            <label className="label-title">
+              жиры
+              <p className="label-title-value" id="fat-value">
+                12% 8г.
+              </p>
+            </label>
+            <label className="label-title">
+              углеводы
+              <p className="label-title-value" id="carbohydrates-value">
+                12% 8г.
+              </p>
+            </label>
+          </div>
+          <p className="dish-view__ingredients-title">Ингредиенты</p>
+          <div className="dish-view__ingredients_list">
+            <p className="dish-view__ingredient-type">Octopus regularis</p>
+            <p className="dish-view__ingredient-type">Tomatus</p>
+            <p className="dish-view__ingredient-type">Sousus</p>
+            <p className="dish-view__ingredient-type">Chesnokus</p>
+          </div>
+          <div className="dish-view__price-container">
+            <p className="dish-view__price-title">2180₽</p>
+            <img className="dish-view__basket-img" src={basketImg} alt="" />
+          </div>
+          <p className="dish-view__recomendation-title">
+            вкус лучше всего раскроется с
+          </p>
+          <div className="dish-view__recomendation_list">
+            <p className="dish-view__recomendation-type">
+              Поль Роже Брют Резерв
+            </p>
+            <p className="dish-view__recomendation-type">
+              Бласон Руж" Креман Брют
+            </p>
+            <p className="dish-view__recomendation-type">
+              Лансон Блэк Лейбл Брют
+            </p>
           </div>
         </div>
       </React.Fragment>
