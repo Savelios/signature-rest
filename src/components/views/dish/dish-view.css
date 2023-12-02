@@ -668,10 +668,11 @@ label {
             justify-content: center;
             align-items: center;
             top: unset;
-            min-width: unset;
+            /* min-width: unset; */
             border-radius: unset;
             overflow-y: unset;
             padding: 0 0 55px 0;
+            width: 100vw;
         }
 
         .dish-view__dish-name-container {
