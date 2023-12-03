@@ -631,7 +631,6 @@ label {
             display: block;
 
             width: 382px;
-            height: 880px;
             flex-shrink: 0;
 
             border-radius: 15px;
@@ -715,11 +714,13 @@ label {
         }
 
         .dish-view__ingredients-title {
-            padding: 29px 0 12px 0;
+            padding: 47px 0 29px 0;
             background-color: unset;
             width: 330px;
             font-weight: 700;
             gap: unset;
+            height: unset;
+            text-align: unset;
         }
 
         .dish-view__ingredients_list {
@@ -728,7 +729,7 @@ label {
         }
 
         .dish-view__recomendation-title {
-            padding: 0 0 40px 0;
+            padding: 0 0 40px 9px;
             color: var(--Gray, #A0AEAF);
             font-family: Futura New;
             font-size: 18px;
@@ -741,14 +742,14 @@ label {
         }
 
         .dish-view__recomendation_list {
-            padding: 0;
+            padding-bottom: 55px;
             gap: 20px;
         }
 
         .pecularity__name {
             align-items: unset;
-            padding: 0;
-
+            padding: 28px 0;
+            padding-top: 43px;
         }
 
         .dish-view__price-container {
