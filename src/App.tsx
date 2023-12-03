@@ -88,13 +88,28 @@ function App() {
       footer[0].setAttribute("style", "display:flex;  height:unset; ");
     }
 
+    if (location.pathname === "/pictures" && windowSize.current[0] <= 715) {
+      footer[0].setAttribute("style", "display:none;");
+    } else {
+      footer[0].setAttribute("style", "display:flex;  height:unset; ");
+    }
+  }, [location]);
+
+  useEffect(() => {
+    const footer = document.getElementsByClassName("footer");
     if (
       location.pathname === "/wine-gallery" ||
       (location.pathname === "/menu" && windowSize.current[0] <= 715)
     ) {
       footer[0].setAttribute("style", "display:none;");
     } else {
-      footer[0].setAttribute("style", "display:flex;  height:unset; ");
+      footer[0].setAttribute("style", "display:flex;");
+    }
+
+    if (location.pathname === "/contacts" && windowSize.current[0] <= 715) {
+      footer[0].setAttribute("style", "display:none;");
+    } else {
+      footer[0].setAttribute("style", "display:flex;");
     }
   }, [location]);
 
