@@ -8,8 +8,8 @@ import "./ContcatsPage.css";
 
 const ContactsPage = () => {
   const defaultState = {
-    center: [55.751574, 37.573856],
-    zoom: 5,
+    center: [55.747951, 37.643821],
+    zoom: 16,
   };
 
   const mapWidthClass = "map-width";
@@ -27,7 +27,7 @@ const ContactsPage = () => {
                 className={mapWidthClass}
                 style={{ height: "100%" }}
               >
-                <Placemark geometry={[55.684758, 37.738521]} />
+                <Placemark geometry={[55.747951, 37.643821]} />
               </Map>
             </YMaps>
           </div>
