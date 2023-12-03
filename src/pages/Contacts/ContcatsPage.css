@@ -153,6 +153,7 @@
 
     .contacts__address-text {
         padding: 27px 24px;
+        width: 445px;
     }
 
     .contacts__social-media-container {
