@@ -97,16 +97,19 @@ function App() {
 
   useEffect(() => {
     const footer = document.getElementsByClassName("footer");
-    if (
-      location.pathname === "/wine-gallery" ||
-      (location.pathname === "/menu" && windowSize.current[0] <= 715)
-    ) {
+    if (location.pathname === "/wine-gallery" && windowSize.current[0] <= 715) {
       footer[0].setAttribute("style", "display:none;");
     } else {
       footer[0].setAttribute("style", "display:flex;");
     }
 
     if (location.pathname === "/contacts" && windowSize.current[0] <= 715) {
+      footer[0].setAttribute("style", "display:none;");
+    } else {
+      footer[0].setAttribute("style", "display:flex;");
+    }
+
+    if (location.pathname === "/menu" && windowSize.current[0] <= 715) {
       footer[0].setAttribute("style", "display:none;");
     } else {
       footer[0].setAttribute("style", "display:flex;");
