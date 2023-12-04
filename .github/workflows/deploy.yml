@@ -18,8 +18,10 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           script: |
            cd signature-rest
+           docker-compose down
            git pull https://github.com/id000000369/signature-rest.git
            npm run build
+           docker-compose up
            cd
            
       - name: Happy Message for CI finish
