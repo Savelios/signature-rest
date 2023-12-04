@@ -91,30 +91,35 @@ function App() {
 
   useEffect(() => {
     const footer = document.getElementsByClassName("footer");
-    if (location.pathname === "/wine-gallery" && windowSize.current[0] <= 715) {
+    if (
+      location.pathname === "/wine-gallery" ||
+      location.pathname === "/contacts" ||
+      location.pathname === "/menu" ||
+      (location.pathname === "/pictures" && windowSize.current[0] <= 715)
+    ) {
       footer[0].setAttribute("style", "display:none;");
     } else {
       footer[0].setAttribute("style", "display:flex;");
     }
   }, [location]);
 
-  useEffect(() => {
-    const footer = document.getElementsByClassName("footer");
-    if (location.pathname === "/contacts" && windowSize.current[0] <= 715) {
-      footer[0].setAttribute("style", "display:none;");
-    } else {
-      footer[0].setAttribute("style", "display:flex;");
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   const footer = document.getElementsByClassName("footer");
+  //   if (location.pathname === "/contacts" && windowSize.current[0] <= 715) {
+  //     footer[0].setAttribute("style", "display:none;");
+  //   } else {
+  //     footer[0].setAttribute("style", "display:flex;");
+  //   }
+  // }, [location]);
 
-  useEffect(() => {
-    const footer = document.getElementsByClassName("footer");
-    if (location.pathname === "/menu" && windowSize.current[0] <= 715) {
-      footer[0].setAttribute("style", "display:none;");
-    } else {
-      footer[0].setAttribute("style", "display:flex;");
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   const footer = document.getElementsByClassName("footer");
+  //   if (location.pathname === "/menu" && windowSize.current[0] <= 715) {
+  //     footer[0].setAttribute("style", "display:none;");
+  //   } else {
+  //     footer[0].setAttribute("style", "display:flex;");
+  //   }
+  // }, [location]);
 
   return (
     <div className="App">
