@@ -66,7 +66,7 @@ export const MainPage: React.FC<ModalProps> = ({
       <div id="main-page__contacts-container" onClick={() => navigate("/contacts")}>Контакты</div>
       <img id="main-page__contacts-line" src={contactsLine} alt="" />
 
-      <div id="main-page__wine-container" onClick={() => navigate("/wine")}>Винная галерея</div>
+      <div id="main-page__wine-container" onClick={() => navigate("/wine-gallery")}>Винная галерея</div>
       <img id="main-page__wine-line" src={wineLine} alt="" />
     </div>
   )
