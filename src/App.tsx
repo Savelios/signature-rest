@@ -87,12 +87,6 @@ function App() {
     } else {
       footer[0].setAttribute("style", "display:flex;  height:unset; ");
     }
-
-    if (location.pathname === "/pictures" && windowSize.current[0] <= 715) {
-      footer[0].setAttribute("style", "display:none;");
-    } else {
-      footer[0].setAttribute("style", "display:flex;  height:unset; ");
-    }
   }, [location]);
 
   useEffect(() => {
@@ -102,14 +96,11 @@ function App() {
     } else {
       footer[0].setAttribute("style", "display:flex;");
     }
+  }, [location]);
 
+  useEffect(() => {
+    const footer = document.getElementsByClassName("footer");
     if (location.pathname === "/contacts" && windowSize.current[0] <= 715) {
-      footer[0].setAttribute("style", "display:none;");
-    } else {
-      footer[0].setAttribute("style", "display:flex;");
-    }
-
-    if (location.pathname === "/menu" && windowSize.current[0] <= 715) {
       footer[0].setAttribute("style", "display:none;");
     } else {
       footer[0].setAttribute("style", "display:flex;");
@@ -118,7 +109,7 @@ function App() {
 
   useEffect(() => {
     const footer = document.getElementsByClassName("footer");
-    if (location.pathname === "/contacts" && windowSize.current[0] <= 715) {
+    if (location.pathname === "/menu" && windowSize.current[0] <= 715) {
       footer[0].setAttribute("style", "display:none;");
     } else {
       footer[0].setAttribute("style", "display:flex;");
