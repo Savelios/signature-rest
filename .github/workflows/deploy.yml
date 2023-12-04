@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ Deploy ]
+    branches: [ master ]
 
 jobs:
   ci_part:
