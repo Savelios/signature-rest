@@ -5,7 +5,6 @@
   },
   "response": {
     "status": 200,
-    "proxyBaseUrl": "https://hackthesky.ru/pictures",
     "jsonBody": [
       {
         "id": 1,
