@@ -116,6 +116,15 @@ function App() {
     }
   }, [location]);
 
+  useEffect(() => {
+    const footer = document.getElementsByClassName("footer");
+    if (location.pathname === "/contacts" && windowSize.current[0] <= 715) {
+      footer[0].setAttribute("style", "display:none;");
+    } else {
+      footer[0].setAttribute("style", "display:flex;");
+    }
+  }, [location]);
+
   return (
     <div className="App">
       {/* <img className={className} src={srcUrl} /> */}
