@@ -1,13 +1,22 @@
 .wine-list__container {
     display: flex;
     margin-bottom: 185px;
-  
+
     justify-content: center;
 }
 
-@media (width <= 2560px) {
+@media (width <=2560px) {
     .wine-list__container {
         justify-content: unset;
         padding-left: 250px;
+    }
+}
+
+/* 431x932 */
+@media (width <=431px) {
+    .wine-list__container {
+        display: grid;
+        justify-content: unset;
+        padding-left: 0;
     }
 }
