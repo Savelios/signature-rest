@@ -296,3 +296,50 @@ body {
 		background-size: cover;
 	}
 }
+
+
+@media (width <=431px) {
+
+	.gold-background {
+		z-index: -1;
+		height: 123%;
+		width: 100vw;
+		max-height: 118%;
+	}
+
+	.picture-page-background {
+
+		z-index: -1;
+		width: 100vw;
+	}
+
+	.wine-background {
+		/* background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+		width: 100vw;
+		height: 1110px; */
+
+		background-image: url("/src/assets/primary-background.png");
+		width: 100vw;
+		height: 1547px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.main-background {
+		background-image: url(http://localhost:3000/static/media/main-background.1665bd3….png);
+		width: calc((3463 * (165vh - 47.5vh)) / 1078);
+		height: 860px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.primary-background {
+		background-image: url(http://localhost:3000/static/media/primary-background.67b3eb7….png);
+		width: calc((3500 * (100vh - 12.5vh)) / 1716);
+		height: 896px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
